@@ -54,3 +54,42 @@ var swiper = new Swiper(".landingSwiper", {
 //     localStorage.setItem('theme', theme)
 // })
 
+// tabs 
+const controlTabs = Array.from(document.querySelectorAll(".tab-control"));
+    const tabContents = Array.from(document.querySelectorAll(".tab-content"));
+    const tabControlContainer = document.querySelector(".tab-controls");
+
+    function showTab() {
+      const activeTab = controlTabs.find((tab) =>
+        tab.classList.contains("active")
+      );
+      const activeTabContent = tabContents.find(
+        (tabContent) => tabContent.dataset.content === activeTab.dataset.tab
+      );
+      activeTabContent.style.display = "flex";
+      hideInactiveTabContents(activeTab);
+    }
+
+    function hideInactiveTabContents(activeTab) {
+      tabContents.forEach((tab) => {
+        if (tab.dataset.content !== activeTab.dataset.tab) {
+          tab.style.display = "none";
+        }
+      });
+    }
+
+    controlTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const currentlyActiveTab = controlTabs.find((tab) =>
+          tab.classList.contains("active")
+        );
+        if (tab == currentlyActiveTab) {
+          return;
+        }
+        currentlyActiveTab.classList.remove("active");
+        tab.classList.add("active");
+        showTab();
+      });
+    });
+
+    showTab();
