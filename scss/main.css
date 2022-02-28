@@ -1065,6 +1065,7 @@ body, html {
   }
   #intro .container .imgs .large-img img {
     width: 100%;
+    height: 100%;
     max-width: 620px;
   }
   #intro .container .imgs .small-img {
@@ -1158,6 +1159,7 @@ body, html {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    color: black;
   }
   #intro .container .content .tabs-container .control .tab-controls li .active::after {
     content: '';
