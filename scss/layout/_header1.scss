@@ -5,12 +5,15 @@
     overflow-x: hidden;
     // position: relative;
   }
-.body-fixed {
-  overflow: hidden;
-}
+
+  .body-fixed {
+    overflow: hidden;
+  }
+
   main {
     position: relative;
   }
+
   // X
   .hamburger {
     z-index: 9999;
@@ -21,6 +24,8 @@
     // X
     z-index: 9999;
     width: 100vw;
+    max-width: 1700px;
+    background-color: white;
 
     &.is-active {
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -34,10 +39,10 @@
       background-color: transparent;
       box-shadow: none;
       border: 0;
-      padding: 1em;
+      padding: .5em 1em;
       max-width: 55em;
       width: 100%;
-      height: 5em;
+      height: 4em;
       position: relative;
 
       & p {
@@ -77,6 +82,7 @@
         background-color: $light-black;
         list-style: none;
         padding: 2em;
+
         & li {
           opacity: 1;
           padding: 0.5em 1em;
@@ -95,16 +101,16 @@
           }
 
           &:hover {
-            cursor: pointer;
+            position: relative;
 
             &::after {
-              position: absolute;
-              width: 95%;
+              content: '';
+              width: 100%;
               height: 2px;
-              bottom: -2px;
-              content: "";
-              background-color: white;
-              z-index: 2;
+              background-color: $primary;
+              position: absolute;
+              bottom: 0;
+              left: 0;
             }
           }
         }
@@ -134,19 +140,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        #nav-cta {
+          display: none;
+        }
       }
 
-      #nav-cta {
-        // display: none;
-        text-decoration: none;
-        background-color: white;
-        border-radius: 2em;
-        padding: 8px 20px;
-        color: #222;
-        margin-right: 1em;
-        font-size: 0.8em;
-        z-index: 2;
-      }
 
       .desktop-flex {
         display: flex;
@@ -173,21 +172,21 @@
     }
 
     // fixed state
-    &.scroll-fixed {
-      transition: all 1s;
-      background-color: $light-black;
-      position: fixed;
-      animation: fadeInDown .5s forwards ease-in;
+    // &.scroll-fixed {
+    //   transition: all 1s;
+    //   background-color: $light-black;
+    //   position: fixed;
+    //   animation: fadeInDown .5s forwards ease-in;
 
-      nav {
-        height: 4em;
-        padding: 1em;
+    //   nav {
+    //     height: 4em;
+    //     padding: 1em;
 
-        .logo-wrapper {
-          img {}
-        }
-      }
-    }
+    //     .logo-wrapper {
+    //       img {}
+    //     }
+    //   }
+    // }
   }
 
   @keyframes fadeIn {
@@ -218,9 +217,9 @@
 @media (min-width: 768px) {
   header {
     z-index: 9999;
+
     & nav {
-      height: 7em;
-      padding: 1em;
+      height: 5em;
       width: 100%;
 
       .nav-links {
@@ -239,11 +238,13 @@
           height: 100%;
         }
       }
-     
+
     }
+
     &.is-active {
       z-index: 9999;
     }
+
     &.scroll-fixed {
       transition: background-color 1s;
       background-color: $light-black;
@@ -288,9 +289,8 @@
       align-items: center;
       background-color: transparent;
       box-shadow: none;
-      padding: 1em;
       width: 100%;
-      height: 100%;
+      height: 6em;
       margin: auto;
       position: relative;
 
@@ -303,7 +303,7 @@
         left: unset;
 
         img {
-          width: 200px;
+          // width: 200px;
         }
       }
 
@@ -332,6 +332,7 @@
 
           a {
             padding: 0.5em;
+            color: #000;
           }
         }
 
@@ -340,27 +341,28 @@
           border-bottom: none;
         }
 
+        a.active {
+          position: relative;
+
+          &::after {
+            content: '';
+            width: 95%;
+            height: 2px;
+            background-color: $primary;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+        }
+
         .social-media {
           display: none;
         }
       }
 
-      #nav-cta {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: unset;
-        padding: 0.6em 1.5em;
-        font-size: 0.875em;
-        margin-right: 0;
-        transition: all 0.5s;
-        white-space: nowrap;
-
-        &:hover,
-        &:active {
-          transform: translateY(-5px);
-          box-shadow: $box-shadow;
-          transition: all 0.5s;
+      .mobile-flex {
+        #nav-cta {
+          display: flex;
         }
       }
     }
@@ -376,11 +378,15 @@
     z-index: 5;
     position: absolute;
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7em;
-    width: 100vw;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    height: 5em;
+    width: 97vw;
+    top: 3.5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 
     & .is-active {
       z-index: 100;
@@ -388,7 +394,9 @@
 
     & nav {
       justify-content: space-between;
-      // padding: 0;
+      height: 100%;
+      width: 100%;
+      max-width: unset;
 
       .logo-wrapper {
         left: unset;
@@ -396,7 +404,7 @@
         position: relative;
 
         img {
-          width: 12em;
+          // width: 12em;
         }
       }
 
@@ -452,7 +460,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: #fff;
+      background: #000;
       transition: all 0.3s ease-in-out;
     }
 
@@ -469,10 +477,12 @@
     .hamburger-inner {
       &::before {
         transform: rotate(-45deg) translate(0px, 0px);
+        background-color: white;
       }
 
       &::after {
         transform: rotate(45deg) translate(0px, 0px);
+        background-color: white;
       }
     }
   }

@@ -1,10 +1,477 @@
-@media (min-width: 0em){
-    // All sections will have an id
+@media (min-width: 0em) {
     #landing {
-        height: 100vh;
+        width: 100vw;
+        height: 50em;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        position: relative;
+
+
+        .swiper-container {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+            .landing-content {
+                position: absolute;
+                width: 100%;
+                max-width: 1200px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: $padding-md;
+                z-index: 2;
+                top: 10em;
+
+                h1,
+                h2 {
+                    color: white;
+                    font-size: 3em;
+                    position: relative;
+                    margin-bottom: .5em;
+                    max-width: 600px;
+                }
+
+                p {
+                    margin-bottom: $margin-md;
+                    line-height: 1.5;
+                    max-width: 600px;
+                    color: white;
+                    font-weight: lighter;
+                }
+
+                .btns {
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-transform: uppercase;
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: max-content;
+                    }
+
+                    a:nth-child(1) {
+                        margin-right: 1em;
+                        // transition: all .5s;
+                        border: 2px solid $primary;
+
+                        &:hover {
+                            transition: all .5s;
+                            background-color: transparent;
+                        }
+                    }
+
+                    a:nth-child(2) {
+                        border: 2px solid $primary;
+                        background-color: transparent;
+                        color: white;
+                        // transition: all .5s;
+
+                        &:hover {
+                            transition: all .5s;
+                            background-color: $primary;
+                        }
+                    }
+                }
+            }
+
+            & .swiper-wrapper {
+                display: flex;
+                position: relative;
+                z-index: 1;
+
+                .swiper-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                }
+
+                .swiper-landing-1 {
+                    background: linear-gradient(top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(/assets/img01M.webp) center / cover;
+                }
+
+                .swiper-landing-2 {
+                    background: linear-gradient(top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(/assets/img01M.webp) center / cover;
+                }
+
+                .swiper-landing-3 {
+                    background: linear-gradient(top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(/assets/img01M.webp) center / cover;
+                }
+
+            }
+        }
+
+        .swiper-slide-active {
+            .landing-content {
+                h1 {
+                    opacity: 0;
+                    animation: fadeUp 1s ease-in-out forwards;
+                }
+
+                p {
+                    animation: fadeUp 1s ease-in-out forwards;
+                    animation-delay: .5s;
+                    opacity: 0;
+                }
+
+                a {
+                    opacity: 0;
+                    animation: fadeUp 1s ease-in-out forwards;
+                    animation-delay: 1.2s;
+                }
+            }
+        }
+
+        .controller {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 1em;
+            bottom: 1em;
+            background-color: white;
+            z-index: 2;
+            box-shadow: $box-shadow;
+
+            &>div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                p {
+                    text-transform: uppercase;
+                    color: $primary;
+                    font-size: .8em;
+                }
+
+                img {
+                    width: 1em;
+                    height: 1em;
+                    margin: 1em;
+                }
+            }
+
+            div:nth-child(1) {
+                padding-right: 1em;
+                background-color: #f1f1f1;
+            }
+
+            div:nth-child(2) {
+                padding-left: 1em;
+            }
+        }
+    }
+
+    .landing-overlap {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: $gray-400;
-    } 
+        flex-direction: column;
+        background-color: white;
+        padding: 0 1em;
+        z-index: 2;
+
+        &>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #a4a4a4;
+            width: 100%;
+            max-width: 600px;
+            padding: 2em 1em;
+
+            a {
+                color: black;
+
+                img {
+                    width: 3em;
+                    height: 3em;
+                    margin-right: 1em;
+                }
+            }
+
+            &>div {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    color: black;
+                    margin-bottom: .5em;
+                }
+
+                p:nth-child(1) {
+                    font-size: 1.2em;
+                }
+
+                a.phone {
+                    color: $primary;
+                }
+            }
+        }
+
+        &>div:nth-child(3) {
+            border-bottom: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #landing {
+
+
+        .swiper-container {
+
+            .landing-content {
+
+
+                h1 {}
+
+                p {
+                    font-size: 1.5em;
+                }
+
+                .btns {
+
+                    a {}
+
+                    a:nth-child(1) {}
+
+                    a:nth-child(2) {}
+                }
+            }
+
+            .swiper-wrapper {
+
+                .swiper-slide {}
+
+
+            }
+        }
+
+        .swiper-slide-active {}
+
+        .controller {}
+    }
+}
+
+@media (min-width: 1024px) {
+    #landing {
+        height: 768px;
+
+        .swiper-container {
+
+            .landing-content {
+
+
+                h1 {}
+
+                p {
+                    font-size: 1.5em;
+                }
+
+                .btns {
+
+                    a {}
+
+                    a:nth-child(1) {}
+
+                    a:nth-child(2) {}
+                }
+            }
+
+            .swiper-wrapper {
+
+                .swiper-slide {}
+
+                .swiper-landing-1 {
+                    background: linear-gradient(135deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .1)), url(/assets/img01.webp) center / cover;
+                }
+
+                .swiper-landing-2 {
+                    background: linear-gradient(135deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .1)), url(/assets/img01.webp) center / cover;
+                }
+
+                .swiper-landing-3 {
+                    background: linear-gradient(135deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .1)), url(/assets/img01.webp) center / cover;
+                }
+
+
+            }
+        }
+
+        .swiper-slide-active {}
+
+        .controller {
+            right: 1.2em;
+        }
+    }
+
+    .landing-overlap {
+        flex-direction: row;
+        padding: 1em;
+
+        &>div {
+            border-bottom: none;
+            border-right: 1px solid #a4a4a4;
+
+            a {
+
+
+                img {}
+            }
+
+            &>div {
+
+
+                p {}
+
+                p:nth-child(1) {}
+
+                a.phone {}
+            }
+        }
+
+        &>div:nth-child(3) {
+            border-right: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #landing {
+
+        .swiper-container {
+
+            .landing-content {
+
+
+                h1 {}
+
+                p {
+                    font-size: 1.5em;
+                }
+
+                .btns {
+
+                    a {}
+
+                    a:nth-child(1) {}
+
+                    a:nth-child(2) {}
+                }
+            }
+
+            .swiper-wrapper {
+
+                .swiper-slide {}
+
+
+            }
+        }
+
+        .swiper-slide-active {}
+
+        .controller {
+            display: none;
+        }
+    }
+
+    .landing-overlap {
+        margin-top: -4em;
+        box-shadow: $box-shadow;
+        transition: all .5s;
+
+        &>div {
+
+            a {
+
+
+                img {
+                    width: 2.5em;
+                    height: 2.5em;
+                }
+            }
+
+            &>div {
+
+
+                p {}
+
+                p:nth-child(1) {}
+
+                a.phone {}
+            }
+        }
+
+        &>div:nth-child(3) {}
+    }
+}
+
+@media (min-width: 1562px) {
+    #landing {
+
+        .swiper-container {
+
+            .landing-content {
+
+
+                h1 {}
+
+                p {
+                    font-size: 1.5em;
+                }
+
+                .btns {
+
+                    a {}
+
+                    a:nth-child(1) {}
+
+                    a:nth-child(2) {}
+                }
+            }
+
+            .swiper-wrapper {
+
+                .swiper-slide {}
+
+
+            }
+        }
+
+        .swiper-slide-active {}
+
+        .controller {
+            display: flex;
+        }
+    }
+
+}
+
+// animate 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

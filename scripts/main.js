@@ -4,18 +4,36 @@ const burger = document.querySelector(".hamburger");
 const navOverlay = document.querySelector('.navlinks-overlay');
 const nav = document.querySelector(".nav-links");
 
-burger.addEventListener('click', () => {
+function toggleNav() {
     nav.classList.toggle('is-active');
     burger.classList.toggle('is-active');
     body.classList.toggle('body-fixed');
     navOverlay.classList.toggle('is-active');
-})
-navOverlay.addEventListener('click', () => {
-    nav.classList.toggle('is-active');
-    burger.classList.toggle('is-active');
-    body.classList.toggle('body-fixed');
-    navOverlay.classList.toggle('is-active');
-})
+}
+burger.addEventListener('click', toggleNav)
+navOverlay.addEventListener('click', toggleNav)
+
+
+var swiper = new Swiper(".landingSwiper", {
+    spaceBetween: 0,
+    centeredSlides: true,
+    loop: true,
+    effect: "fade",
+    autoplay: {
+        delay: 9000,
+        disableOnInteraction: true,
+      },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".landing-swipe-next",
+        prevEl: ".landing-swipe-prev",
+    },
+});
+
+
 // // Color theme toggle
 // const themeToggle = document.querySelector('.theme-toggle');
 // const prefersDarkTheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -35,3 +53,4 @@ navOverlay.addEventListener('click', () => {
 //     }
 //     localStorage.setItem('theme', theme)
 // })
+

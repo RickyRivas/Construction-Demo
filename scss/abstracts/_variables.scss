@@ -49,7 +49,7 @@ $colors: ("blue": $blue,
     "gray": $gray-600,
     "gray-dark": $gray-800);
 // theme-color-variables
-$primary: #2d2d2d;
+$primary: #FE5E15;
 $primary-light: $gray-200;
 $secondary: $red;
 $success: $green;
@@ -68,19 +68,19 @@ $theme-colors: ("primary": $primary,
     "light": $light,
     "dark": $dark);
 // border-radius-variables
-$border-radius: .25rem;
-$border-radius-sm: .2rem;
-$border-radius-lg: .3rem;
-$border-radius-pill: 50rem;
+$border-radius: .25em;
+$border-radius-sm: .2em;
+$border-radius-lg: .3em;
+$border-radius-pill: 50em;
 
 // box-shadow-variables
-$box-shadow: 0 .5rem 1rem rgba($black, .15);
-$box-shadow-sm: 0 .125rem .25rem rgba($black, .075);
-$box-shadow-lg: 0 1rem 3rem rgba($black, .175);
+$box-shadow: 0 .5em 1em rgba($black, .15);
+$box-shadow-sm: 0 .125em .25em rgba($black, .075);
+$box-shadow-lg: 0 1em 3em rgba($black, .175);
 $box-shadow-inset: inset 0 1px 2px rgba($black, .075);
 // $font-size-base effects the font size of the body text
 $font-size-root: null;
-$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-base: 1em; // Assumes the browser default, typically `16px`
 $font-size-sm: $font-size-base * .875;
 $font-size-lg: $font-size-base * 1.25;
 
@@ -103,20 +103,19 @@ $h4-font-size: $font-size-base * 1.5;
 $h5-font-size: $font-size-base * 1.25;
 $h6-font-size: $font-size-base;
 // Spacing
-$padding-sm: .5rem;
-$padding-md: 1rem;
-$padding-lg: 2rem;
-$padding-xl: 4rem;
-$margin-sm: .5rem;
-$margin-md: 1rem;
-$margin-lg: 2rem;
-$margin-xl: 4rem;
+$padding-sm: .5em;
+$padding-md: 1em;
+$padding-lg: 2em;
+$padding-xl: 4em;
+$margin-sm: .5em;
+$margin-md: 1em;
+$margin-lg: 2em;
+$margin-xl: 4em;
 // Text color
 $text-color: $gray-400;
 // div
 $dark-div-bg: #172933;
 $brown-div-bg: #2d2d2d;
-// font
-$font-one: 'Boska', serif;
+
 // h2 psuedo background
 $psuedo-bg: linear-gradient(to right,#ed5034 0%,#ed5034 74%,rgba(255,255,255,0) 74%,rgba(255,255,255,0) 87%,#ed5034 87%);

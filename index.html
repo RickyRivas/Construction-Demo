@@ -31,8 +31,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/scss/main.css">
-
-    <title>Title | Business | Location, OK</title>
+    <link href="scss/swiper-bundle.min.css" rel='stylesheet'>
+    <title>Construction Demo by Rivas Web Designs | Business | Tulsa, OK</title>
 </head>
 
 <body>
@@ -40,17 +40,19 @@
     <header>
         <nav>
             <div class="logo-wrapper">
-                <img src="assets/RivasWebDesigns.svg" class="" alt="Rivas Web Designs Logo" width='200' height='72' />
+                <img src="assets/29.jpg" class="" alt="Rivas Web Designs Logo" width='128'
+                    height='80' />
             </div>
             <div class="navlinks-overlay"></div>
             <div class="desktop-flex">
                 <ul class="nav-links">
-                    <li class="nav-link"><a href='index.html'>Home</a></li>
+                    <li class="nav-link"><a href='index.html' class="active">Home</a></li>
                     <li class="nav-link"><a href="services.html">Services</a></li>
                     <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
                     <li class="nav-link"><a href="#about">About</a></li>
                     <li class="nav-link"><a href="contact.html">Contact</a></li>
                     <li class="social-media">
+                        <!-- <img src="assets/instagramwhite.svg" alt="instagram icon" class="" /> -->
                         <a href="mailto:rivaswebdesigns@gmail.com"><img
                                 src="https://d33wubrfki0l68.cloudfront.net/05e54babfd7539afe96921c2ee7e9f679371316b/bf936/assets/paper-plane.svg"
                                 alt="email" class="" /></a>
@@ -58,7 +60,7 @@
                 </ul>
                 <!-- </div> -->
                 <div class="mobile-flex">
-                    <a href="contact.html" id="nav-cta" class="">Request Quote</a>
+                    <a href="contact.html" id='nav-cta' class="btn">Request Quote</a>
                     <button class="hamburger" aria-label="Toggle">
                         <span class="hamburger-inner"> </span>
                     </button>
@@ -71,8 +73,85 @@
     <main>
         <!-- Landing Section Start -->
         <section id='landing'>
+            <!-- Swiper -->
+            <div class="swiper swiper-container landingSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-landing-1 swiper-slide">
+                        <div class='landing-content'>
+                            <h1>Professional Builders in Tulsa, OK</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu tincidunt id nam nibh.</p>
+                            <div class="btns">
+                                <a class='btn btn-primary'>Request Quote</a>
+                                <a class='btn btn-light'>View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-landing-2 swiper-slide">
+                        <div class='landing-content'>
+                            <h2>Slide Two</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu tincidunt id nam nibh.</p>
+                            <div class="btns">
+                                <a class='btn btn-primary'>Request Quote</a>
+                                <a class='btn btn-light'>View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-landing-3 swiper-slide">
+                        <div class='landing-content'>
+                            <h2>Slide Three</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu tincidunt id nam nibh.</p>
+                            <div class="btns">
+                                <a class='btn btn-primary'>Request Quote</a>
+                                <a class='btn btn-light'>View Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Swiper -->
+            <!-- Controls -->
+            <div class="controller">
+                <div class="landing-swipe-prev">
+                    <img src="/assets/left-arrow.svg" alt="Left Arrow" height="25" width="25">
+                    <p>Prev</p>
+                </div>
+                <div class="landing-swipe-next">
+                    <p>Next</p>
+                    <img src="/assets/right-arrow.svg" alt="Right Arrow" height="25" width="25">
+                </div>
+            </div>
         </section>
         <!-- Landing Section End -->
+        <!-- Overlapping element -->
+        <div class="landing-overlap">
+            <div>
+                <a href="#">
+                    <img src="/assets/telephone-call.svg" alt="Phone Icon" height="50" width="50">
+                </a>
+                <div>
+                    <p>Call Us</p>
+                    <a href="#" class='phone' style="font-size: 1.3em;">(918) 123 - 4567</a>
+                </div>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/assets/place.svg" alt="Place Icon" height="50" width="50">
+                </a>
+                <div>
+                    <p>Our Location</p>
+                    <a href="#">Tulsa, Oklahoma, 74115</a>
+                </div>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="/assets/timetable.svg" alt="Timetable Icon" height="50" width="50">
+                </a>
+                <div>
+                    <p>Operating Hours</p>
+                    <p>Mon - Fri | 9am - 5pm CST</p>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Main End -->
     <!-- Footer -->
@@ -131,6 +210,7 @@
     </div>
     <!-- Footer -->
     <!-- Scripts -->
+    <script src='scripts/swiper-bundle.min.js'></script>
     <script src='scripts/main.js'></script>
 </body>
 
