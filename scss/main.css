@@ -1337,6 +1337,7 @@ body, html {
     font-size: 2.5em;
     margin-bottom: .5em;
     color: #001659;
+    text-transform: uppercase;
   }
   #services .container .heading:hover p,
   #services .container .heading:hover h2 {
@@ -1452,6 +1453,8 @@ body, html {
   #why-over .text h2 {
     font-size: 2.5em;
     margin-bottom: .1em;
+    color: #001659;
+    text-transform: uppercase;
   }
   #why-over .text p {
     line-height: 1.5;
@@ -1501,6 +1504,121 @@ body, html {
   #why-over .img-container > div > div a {
     color: #FE5E15;
   }
+  #team {
+    padding: 4em 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #team > a {
+    margin-top: 4em;
+  }
+  #team .heading {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+  #team .heading span {
+    text-transform: uppercase;
+    color: #FE5E15;
+  }
+  #team .heading h2 {
+    font-size: 2.5em;
+    color: #001659;
+    margin-bottom: .1em;
+    text-transform: uppercase;
+  }
+  #team .heading p {
+    line-height: 1.5;
+  }
+  #team .container {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+  #team .container .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    max-width: 360px;
+  }
+  #team .container .item .img-box {
+    height: 400px;
+    width: 100%;
+    position: relative;
+  }
+  #team .container .item .img-box img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #team .container .item .bio {
+    width: 90%;
+    -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+    padding: 1em;
+    margin-top: -40px;
+    z-index: 2;
+    position: relative;
+    background-color: white;
+    border-bottom: 5px solid #FE5E15;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #team .container .item .bio > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #team .container .item .bio > div h3 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  #team .container .item .bio > div p {
+    margin-bottom: .7em;
+    font-size: .8em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1522,6 +1640,11 @@ body, html {
   }
   #services .container .item:last-child {
     padding: 0;
+  }
+  #team .container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    place-items: center;
   }
 }
 
@@ -1598,6 +1721,13 @@ body, html {
     width: 90%;
     margin-top: -200px;
     max-width: 900px;
+  }
+  #team .container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
   }
 }
 

@@ -490,6 +490,7 @@
                     font-size: 2.5em;
                     margin-bottom: .5em;
                     color: $secondary;
+                    text-transform: uppercase;
                 }
 
                 &:hover {
@@ -607,6 +608,8 @@
             h2 {
                 font-size: 2.5em;
                 margin-bottom: .1em;
+                color: $secondary;
+                text-transform: uppercase;
             }
 
             p {
@@ -656,6 +659,99 @@
 
                     a {
                         color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    #team {
+        padding: $padding-xl $padding-md;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &>a {
+            margin-top: 4em;
+        }
+        .heading {
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 2em;
+            span {
+                text-transform: uppercase;
+                color: $primary;
+            }
+
+            h2 {
+                font-size: 2.5em;
+                color: $secondary;
+                margin-bottom: .1em;
+                text-transform: uppercase;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+        }
+
+        .container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1em;
+
+            .item {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                max-width: 360px;
+
+                .img-box {
+                    height: 400px;
+                    width: 100%;
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        object-fit: cover;
+                    }
+                }
+
+                .bio {
+                    width: 90%;
+                    box-shadow: $box-shadow;
+                    padding: 1em;
+                    margin-top: -40px;
+                    z-index: 2;
+                    position: relative;
+                    background-color: white;
+                    border-bottom: 5px solid $primary;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &>div {
+                        display: flex;
+                        flex-direction: column;
+
+                        h3 {
+                            font-weight: bold;
+                            font-size: 30px;
+                        }
+
+                        p {
+                            margin-bottom: .7em;
+                            font-size: .8em;
+                        }
                     }
                 }
             }
@@ -800,6 +896,46 @@
                 padding: 0;
 
                 p {}
+            }
+        }
+    }
+
+    #team {
+
+
+        .heading {
+
+
+            span {}
+
+            h2 {}
+
+            p {}
+        }
+
+        .container {
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+
+            .item {
+
+
+                .img-box {
+
+                    img {}
+                }
+
+                .bio {
+
+
+                    &>div {
+
+
+                        h3 {}
+
+                        p {}
+                    }
+                }
             }
         }
     }
@@ -1018,6 +1154,48 @@
                     p {}
 
                     a {}
+                }
+            }
+        }
+    }
+
+    #team {
+
+
+        .heading {
+
+
+            span {}
+
+            h2 {}
+
+            p {}
+        }
+
+        .container {
+            grid-template-columns: repeat(3, 1fr);
+            place-items: center;
+            max-width: 1200px;
+            margin: auto;
+
+            .item {
+
+
+                .img-box {
+
+                    img {}
+                }
+
+                .bio {
+
+
+                    &>div {
+
+
+                        h3 {}
+
+                        p {}
+                    }
                 }
             }
         }
