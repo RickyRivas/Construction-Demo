@@ -1829,6 +1829,97 @@ body, html {
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
+  #test {
+    padding: 4em 1em;
+  }
+  #test .heading {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+  #test .heading span {
+    text-transform: uppercase;
+    color: #FE5E15;
+  }
+  #test .heading h2 {
+    font-size: 2.5em;
+    color: #001659;
+    margin-bottom: .1em;
+    text-transform: uppercase;
+  }
+  #test .heading p {
+    line-height: 1.5;
+  }
+  #test .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1em;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  #test .container .item {
+    -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+    padding: 1em;
+  }
+  #test .container .item .stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1em;
+  }
+  #test .container .item .stars img {
+    margin-right: .5em;
+  }
+  #test .container .item p {
+    line-height: 1.5;
+    padding-bottom: 1em;
+  }
+  #test .container .item .info {
+    border-top: 1px solid #222;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 1em;
+  }
+  #test .container .item .info img {
+    width: 3em;
+    height: 3em;
+  }
+  #test .container .item .info > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #test .container .item .info > div h4 {
+    font-weight: bold;
+    margin-bottom: .4em;
+  }
+  #test .container .item .info > div p {
+    padding: 0;
+    font-weight: lighter;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1855,6 +1946,13 @@ body, html {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     place-items: center;
+  }
+  #test .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
   }
 }
 
@@ -1958,6 +2056,13 @@ body, html {
   }
   #projects .heading h2 {
     margin-bottom: .0;
+  }
+  #test .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
   }
 }
 
