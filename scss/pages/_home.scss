@@ -832,6 +832,7 @@
                 overflow: hidden;
                 position: relative;
                 box-shadow: $box-shadow;
+                border-bottom: 3px solid $primary;
 
                 .left {
                     width: 40px !important;
@@ -839,6 +840,7 @@
                     background-color: $light-black;
                     position: relative;
                     z-index: 3;
+
 
                     &::after {
                         content: "";
@@ -894,6 +896,7 @@
                 position: relative;
                 overflow: hidden;
                 box-shadow: $box-shadow;
+                border-bottom: 3px solid $primary;
 
                 .right {
                     width: 40px !important;
@@ -1589,6 +1592,7 @@
                         p {}
                     }
                 }
+
                 &:hover {
                     transform: translateY(-10px);
                 }
