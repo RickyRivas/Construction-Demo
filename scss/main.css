@@ -1060,7 +1060,7 @@ body, html {
   }
   #intro {
     width: 100vw;
-    padding: 4em 1em;
+    padding: 0 1em 4em 1em;
   }
   #intro .container .imgs {
     margin-bottom: 1em;
@@ -1303,8 +1303,8 @@ body, html {
     z-index: -1;
     top: 0;
     left: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/img11.jpg) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img11.jpg) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/img11.webp) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img11.webp) center/cover;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     -webkit-transform: scale(0.9);
@@ -1349,6 +1349,47 @@ body, html {
   }
   #services .container .item:last-child:hover p, #services .container .item:last-child:hover h2 {
     color: currentColor;
+  }
+  #small-contact {
+    background: url(/assets/img05M.webp) center/cover;
+    padding: 4em 2em;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #small-contact h2 {
+    line-height: 1.5;
+    font-size: 1.6em;
+    margin-bottom: .5em;
+    color: white;
+    z-index: 2;
+    position: relative;
+    text-align: center;
+  }
+  #small-contact button {
+    background-color: white;
+    z-index: 2;
+    position: relative;
+  }
+  #small-contact .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #FE5E15;
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: .90;
   }
 }
 
@@ -1406,6 +1447,9 @@ body, html {
   }
   .landing-overlap > div:nth-child(3) {
     border-right: none;
+  }
+  #intro {
+    padding: 4em 1em;
   }
   #intro .container {
     display: -ms-grid;
@@ -1474,6 +1518,10 @@ body, html {
     -webkit-transition: all .5s;
     transition: all .5s;
     position: relative;
+  }
+  #small-contact {
+    background: url(/assets/img05L.webp) center/cover;
+    background-attachment: fixed;
   }
 }
 

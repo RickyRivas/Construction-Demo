@@ -233,8 +233,7 @@
 
     #intro {
         width: 100vw;
-        padding: $padding-xl $padding-md;
-
+        padding: 0 $padding-md $padding-xl $padding-md;
         .container {
             .imgs {
                 margin-bottom: 1em;
@@ -453,7 +452,7 @@
                     z-index: -1;
                     top: 0;
                     left: 0;
-                    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/img11.jpg) center / cover;
+                    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/img11.webp) center / cover;
                     transition: all .4s ease-in-out;
                     transform: scale(.9);
                     opacity: 0;
@@ -509,6 +508,38 @@
                     }
                 }
             }
+        }
+    }
+    #small-contact {
+       background: url(/assets/img05M.webp) center / cover;
+        padding: $padding-xl $padding-lg;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            line-height: 1.5;
+            font-size: 1.6em;
+            margin-bottom: .5em;
+            color: white;
+            z-index: 2;
+            position: relative;
+            text-align: center;
+        }
+        button {
+            background-color: white;
+            z-index: 2;
+            position: relative;
+        }
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: $primary;
+            top: 0;
+            left: 0;
+            position: absolute;
+            opacity: .90;
         }
     }
 }
@@ -738,7 +769,7 @@
     }
 
     #intro {
-
+        padding: $padding-xl $padding-md;
         .container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1000,6 +1031,10 @@
                 p {}
             }
         }
+    }
+    #small-contact {
+        background: url(/assets/img05L.webp) center / cover;
+        background-attachment: fixed;
     }
 }
 
