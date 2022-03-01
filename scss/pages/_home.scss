@@ -1569,7 +1569,7 @@
             grid-gap: 1em;
 
             .item {
-
+                transition: all .5s;
 
                 .stars {
 
@@ -1588,6 +1588,9 @@
 
                         p {}
                     }
+                }
+                &:hover {
+                    transform: translateY(-10px);
                 }
             }
         }
