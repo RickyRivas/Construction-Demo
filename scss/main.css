@@ -1550,6 +1550,8 @@ body, html {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 1em;
+    margin: auto;
+    place-items: center;
   }
   #team .container .item {
     display: -webkit-box;
@@ -1618,6 +1620,214 @@ body, html {
   #team .container .item .bio > div p {
     margin-bottom: .7em;
     font-size: .8em;
+  }
+  #projects {
+    padding: 4em 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #projects .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #projects .heading span {
+    text-transform: uppercase;
+    color: #FE5E15;
+  }
+  #projects .heading h2 {
+    font-size: 2.5em;
+    color: #001659;
+    margin-bottom: .3em;
+  }
+  #projects .portSwiper {
+    width: 100%;
+    height: auto;
+  }
+  #projects .portSwiper .swiper-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: transparent;
+    padding: 1.5em 0;
+  }
+  #projects .portSwiper .swiper-wrapper .swiper-slide {
+    background-color: #f8f8f8;
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    height: 30em;
+  }
+  #projects .portSwiper .swiper-wrapper .swiper-slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #projects .controller {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+    z-index: 2;
+  }
+  #projects .controller .swiper-prev-port {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    cursor: pointer;
+    padding: 1.5em;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+  }
+  #projects .controller .swiper-prev-port .left {
+    width: 40px !important;
+    height: 2px;
+    background-color: #222;
+    position: relative;
+    z-index: 3;
+  }
+  #projects .controller .swiper-prev-port .left::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    -webkit-transform-origin: 0%;
+            transform-origin: 0%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #projects .controller .swiper-prev-port .left::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    -webkit-transform-origin: 0%;
+            transform-origin: 0%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #projects .controller .swiper-prev-port::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 100%;
+    background-color: #FE5E15;
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
+  }
+  #projects .controller .swiper-prev-port.pressedControl .left {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+  }
+  #projects .controller .swiper-prev-port.pressedControl::before {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  #projects .controller .swiper-next-port {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    cursor: pointer;
+    padding: 1em;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+  }
+  #projects .controller .swiper-next-port .right {
+    width: 40px !important;
+    height: 2px;
+    background-color: black;
+    position: relative;
+  }
+  #projects .controller .swiper-next-port .right::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    right: 0;
+    -webkit-transform-origin: 100%;
+            transform-origin: 100%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #projects .controller .swiper-next-port .right::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    right: 0;
+    -webkit-transform-origin: 100%;
+            transform-origin: 100%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #projects .controller .swiper-next-port::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 100%;
+    background-color: #FE5E15;
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  #projects .controller .swiper-next-port.pressedControl .right {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+  }
+  #projects .controller .swiper-next-port.pressedControl::before {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -1728,6 +1938,26 @@ body, html {
     place-items: center;
     max-width: 1200px;
     margin: auto;
+  }
+  #projects .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: 1000px;
+  }
+  #projects .heading h2 {
+    margin-bottom: .0;
   }
 }
 

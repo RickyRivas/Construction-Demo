@@ -92,4 +92,27 @@ const controlTabs = Array.from(document.querySelectorAll(".tab-control"));
       });
     });
 
-    showTab();
+showTab();
+  
+// Projects swiper
+var swiper = new Swiper(" .portSwiper", {
+  spaceBetween: 30,
+  speed: 1000,
+  loop: true,
+  autoplay: true,
+  slidesPerView: 'auto',
+  disableOnInteraction: true,
+  centeredSlides: true,
+  pagination: false,
+  navigation: {
+    nextEl: ".swiper-next-port",
+    prevEl: ".swiper-prev-port"
+  },
+});
+let swiperPortControls = document.querySelectorAll('.control');
+swiperPortControls.forEach(control => {
+  control.addEventListener('click', () => {
+    document.querySelector('.controller .pressedControl').classList.remove('pressedControl')
+    control.classList.add('pressedControl')
+  })
+})
