@@ -234,6 +234,7 @@
     #intro {
         width: 100vw;
         padding: 0 $padding-md $padding-xl $padding-md;
+
         .container {
             .imgs {
                 margin-bottom: 1em;
@@ -467,7 +468,9 @@
                 }
 
                 &:hover {
-                    p, h4 {
+
+                    p,
+                    h4 {
                         color: white;
                     }
                 }
@@ -488,9 +491,12 @@
                     margin-bottom: .5em;
                     color: $secondary;
                 }
+
                 &:hover {
-                    p, h2 {
-                        color:currentColor;
+
+                    p,
+                    h2 {
+                        color: currentColor;
                     }
                 }
             }
@@ -502,22 +508,27 @@
                 p {
                     margin-bottom: 1em;
                 }
+
                 &:hover {
-                    p, h2 {
-                        color:currentColor;
+
+                    p,
+                    h2 {
+                        color: currentColor;
                     }
                 }
             }
         }
     }
+
     #small-contact {
-       background: url(/assets/img05M.webp) center / cover;
+        background: url(/assets/img05M.webp) center / cover;
         padding: $padding-xl $padding-lg;
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
         h2 {
             line-height: 1.5;
             font-size: 1.6em;
@@ -527,11 +538,13 @@
             position: relative;
             text-align: center;
         }
+
         button {
             background-color: white;
             z-index: 2;
             position: relative;
         }
+
         .overlay {
             width: 100%;
             height: 100%;
@@ -540,6 +553,112 @@
             left: 0;
             position: absolute;
             opacity: .90;
+        }
+    }
+
+    #why {
+        padding: $padding-xl $padding-md 15em $padding-md;
+        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img06M.webp) center / cover;
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1em;
+
+            .item {
+                color: white;
+            }
+
+            h2 {
+                span {
+                    font-weight: bold;
+                    font-size: 2em;
+                    margin-right: .1em;
+                }
+            }
+
+            p {
+                line-height: 1.5;
+            }
+        }
+    }
+
+    #why-over {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 90%;
+        margin: auto;
+        margin-top: -175px;
+        background-color: white;
+        box-shadow: $box-shadow;
+        max-width: 700px;
+
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 2em;
+
+            span {
+                color: $primary;
+            }
+
+            h2 {
+                font-size: 2.5em;
+                margin-bottom: .1em;
+            }
+
+            p {
+                line-height: 1.5;
+                margin-bottom: 1em;
+            }
+
+            a {
+                margin-bottom: .5em;
+            }
+        }
+
+        .img-container {
+            position: relative;
+            height: 100%;
+
+            img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &>div {
+                position: absolute;
+                bottom: 1em;
+                right: 1rem;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: .5em;
+
+                img {
+                    width: 2em;
+                    height: 2em;
+                    position: relative;
+                    margin-right: 1em;
+                }
+
+                &>div {
+                    p {
+                        margin-bottom: .3em;
+                    }
+
+                    a {
+                        color: $primary;
+                    }
+                }
+            }
         }
     }
 }
@@ -770,6 +889,7 @@
 
     #intro {
         padding: $padding-xl $padding-md;
+
         .container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -842,6 +962,62 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+    #why {
+        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img06L.webp) center / cover;
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            margin: auto;
+            max-width: 1200px;
+
+            .item {}
+
+            h2 {
+                span {}
+            }
+
+            p {}
+        }
+    }
+
+    #why-over {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin-top: -200px;
+        max-width: 900px;
+
+        .text {
+
+            span {}
+
+            h2 {}
+
+            p {}
+
+            a {}
+        }
+
+        .img-container {
+
+            img {}
+
+            &>div {
+
+
+                img {}
+
+                &>div {
+                    p {}
+
+                    a {}
                 }
             }
         }
@@ -1032,9 +1208,26 @@
             }
         }
     }
+
     #small-contact {
         background: url(/assets/img05L.webp) center / cover;
         background-attachment: fixed;
+    }
+
+    #why {
+        background-attachment: fixed;
+
+        .container {
+
+
+            .item {}
+
+            h2 {
+                span {}
+            }
+
+            p {}
+        }
     }
 }
 
