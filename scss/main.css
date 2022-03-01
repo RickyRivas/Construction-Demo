@@ -193,6 +193,7 @@ body, html {
   }
   header nav .mobile-flex #nav-cta {
     display: none;
+    color: #000;
   }
   header nav .desktop-flex {
     display: -webkit-box;
@@ -744,7 +745,7 @@ body, html {
   padding: 15px 25px;
   background-color: #FE5E15;
   border: 0;
-  color: white;
+  color: black;
   text-decoration: none;
   -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
@@ -1241,6 +1242,78 @@ body, html {
     margin: 0;
     line-height: 1.5;
   }
+  #services {
+    width: 100vw;
+    padding: 4em 1em;
+    background-color: #f1f1f1;
+  }
+  #services .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 1em;
+  }
+  #services .container .item {
+    background-color: white;
+    padding: 2em;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #services .container .item img {
+    width: 3em;
+    height: 3em;
+    margin-bottom: 1em;
+  }
+  #services .container .item h4 {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    color: #001659;
+  }
+  #services .container .item p {
+    line-height: 1.5;
+    font-size: .9em;
+  }
+  #services .container .heading {
+    background-color: transparent;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0;
+  }
+  #services .container .heading span {
+    color: #FE5E15;
+    margin-bottom: .5em;
+  }
+  #services .container .heading h2 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+    color: #001659;
+  }
+  #services .container .item:last-child {
+    background-color: transparent;
+    padding: 1em 0 0 0;
+  }
+  #services .container .item:last-child p {
+    margin-bottom: 1em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1252,6 +1325,16 @@ body, html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  #services .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  #services .container .item {
+    width: 100%;
+  }
+  #services .container .item:last-child {
+    padding: 0;
   }
 }
 
@@ -1344,6 +1427,14 @@ body, html {
   #intro .container .imgs .small-img {
     margin-left: -100px;
     margin-top: -250px;
+  }
+  #services .container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+  }
+  #services .container .item {
+    width: 100%;
   }
 }
 
