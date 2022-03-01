@@ -420,11 +420,13 @@
                 padding: 2em;
                 width: 100%;
                 height: 100%;
-                // margin-bottom: 2em;
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
+                position: relative;
+                z-index: 1;
+                transition: all .5s;
 
                 img {
                     width: 3em;
@@ -443,6 +445,33 @@
                     line-height: 1.5;
                     font-size: .9em;
                 }
+
+                .hover-img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/img11.jpg) center / cover;
+                    transition: all .4s ease-in-out;
+                    transform: scale(.9);
+                    opacity: 0;
+                    visibility: hidden;
+
+                }
+
+                &:hover .hover-img {
+                    transform: scale(1);
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                &:hover {
+                    p, h4 {
+                        color: white;
+                    }
+                }
             }
 
             .heading {
@@ -460,6 +489,11 @@
                     margin-bottom: .5em;
                     color: $secondary;
                 }
+                &:hover {
+                    p, h2 {
+                        color:currentColor;
+                    }
+                }
             }
 
             .item:last-child {
@@ -468,6 +502,11 @@
 
                 p {
                     margin-bottom: 1em;
+                }
+                &:hover {
+                    p, h2 {
+                        color:currentColor;
+                    }
                 }
             }
         }
@@ -938,12 +977,15 @@
             .item {
 
                 width: 100%;
+                transition: all .5s;
+                position: relative;
 
                 img {}
 
                 h4 {}
 
                 p {}
+
             }
 
             .heading {

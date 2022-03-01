@@ -750,6 +750,7 @@ body, html {
   -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
   font-size: .8em;
+  text-transform: uppercase;
 }
 
 .btn:hover {
@@ -1275,6 +1276,10 @@ body, html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
   }
   #services .container .item img {
     width: 3em;
@@ -1290,6 +1295,31 @@ body, html {
   #services .container .item p {
     line-height: 1.5;
     font-size: .9em;
+  }
+  #services .container .item .hover-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/img11.jpg) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img11.jpg) center/cover;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 0;
+    visibility: hidden;
+  }
+  #services .container .item:hover .hover-img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  #services .container .item:hover p, #services .container .item:hover h4 {
+    color: white;
   }
   #services .container .heading {
     background-color: transparent;
@@ -1307,12 +1337,18 @@ body, html {
     margin-bottom: .5em;
     color: #001659;
   }
+  #services .container .heading:hover p, #services .container .heading:hover h2 {
+    color: currentColor;
+  }
   #services .container .item:last-child {
     background-color: transparent;
     padding: 1em 0 0 0;
   }
   #services .container .item:last-child p {
     margin-bottom: 1em;
+  }
+  #services .container .item:last-child:hover p, #services .container .item:last-child:hover h2 {
+    color: currentColor;
   }
 }
 
@@ -1435,6 +1471,9 @@ body, html {
   }
   #services .container .item {
     width: 100%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    position: relative;
   }
 }
 
