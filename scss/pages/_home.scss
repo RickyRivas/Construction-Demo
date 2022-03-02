@@ -7,7 +7,6 @@
         // align-items: center;
         position: relative;
 
-
         .swiper-container {
             height: 100%;
             width: 100%;
@@ -34,7 +33,7 @@
                     color: white;
                     font-size: 3em;
                     position: relative;
-                    margin-bottom: .5em;
+                    margin-bottom: 0.5em;
                     max-width: 600px;
                 }
 
@@ -65,7 +64,7 @@
                         color: black;
 
                         &:hover {
-                            transition: all .5s;
+                            transition: all 0.5s;
                             background-color: transparent;
                             color: white;
                         }
@@ -78,7 +77,7 @@
                         // transition: all .5s;
 
                         &:hover {
-                            transition: all .5s;
+                            transition: all 0.5s;
                             background-color: $primary;
                             color: black;
                         }
@@ -96,21 +95,22 @@
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-
                 }
 
                 .swiper-landing-1 {
-                    background: linear-gradient(top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(/assets/img01M.webp) center / cover;
+                    background: linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+                        url(/assets/img01M.webp) center / cover;
                 }
 
                 .swiper-landing-2 {
-                    background: linear-gradient(top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(/assets/img02M.webp) center / cover;
+                    background: linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+                        url(/assets/img02M.webp) center / cover;
                 }
 
                 .swiper-landing-3 {
-                    background: linear-gradient(top, rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)), url(/assets/img06M.webp) center / cover;
+                    background: linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+                        url(/assets/img06M.webp) center / cover;
                 }
-
             }
         }
 
@@ -123,7 +123,7 @@
 
                 p {
                     animation: fadeUp 1s ease-in-out forwards;
-                    animation-delay: .5s;
+                    animation-delay: 0.5s;
                     opacity: 0;
                 }
 
@@ -154,7 +154,7 @@
 
                 p {
                     text-transform: uppercase;
-                    font-size: .8em;
+                    font-size: 0.8em;
                 }
 
                 img {
@@ -213,7 +213,7 @@
 
                 p {
                     color: black;
-                    margin-bottom: .5em;
+                    margin-bottom: 0.5em;
                 }
 
                 p:nth-child(1) {
@@ -283,7 +283,7 @@
                     color: $secondary;
                     font-size: 2.5em;
                     text-transform: uppercase;
-                    margin-bottom: .5em;
+                    margin-bottom: 0.5em;
                 }
 
                 p {
@@ -327,7 +327,7 @@
 
                                 & .active {
                                     &::after {
-                                        content: '';
+                                        content: "";
                                         width: 100%;
                                         position: absolute;
                                         bottom: -3px;
@@ -386,7 +386,7 @@
                                     img {
                                         width: 1.5em;
                                         height: 1.5em;
-                                        margin-right: .6em;
+                                        margin-right: 0.6em;
                                     }
 
                                     p {
@@ -426,12 +426,12 @@
                 flex-direction: column;
                 position: relative;
                 z-index: 1;
-                transition: all .5s;
+                transition: all 0.5s;
 
                 img {
                     width: 3em;
                     height: 3em;
-                    margin-bottom: 1em
+                    margin-bottom: 1em;
                 }
 
                 h4 {
@@ -443,7 +443,7 @@
 
                 p {
                     line-height: 1.5;
-                    font-size: .9em;
+                    font-size: 0.9em;
                 }
 
                 .hover-img {
@@ -453,12 +453,12 @@
                     z-index: -1;
                     top: 0;
                     left: 0;
-                    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/img11.webp) center / cover;
-                    transition: all .4s ease-in-out;
-                    transform: scale(.9);
+                    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                        url(/assets/img11.webp) center / cover;
+                    transition: all 0.4s ease-in-out;
+                    transform: scale(0.9);
                     opacity: 0;
                     visibility: hidden;
-
                 }
 
                 &:hover .hover-img {
@@ -483,12 +483,12 @@
 
                 span {
                     color: $primary;
-                    margin-bottom: .5em;
+                    margin-bottom: 0.5em;
                 }
 
                 h2 {
                     font-size: 2.5em;
-                    margin-bottom: .5em;
+                    margin-bottom: 0.5em;
                     color: $secondary;
                     text-transform: uppercase;
                 }
@@ -530,20 +530,23 @@
         align-items: center;
         flex-direction: column;
 
-        h2 {
-            line-height: 1.5;
-            font-size: 1.6em;
-            margin-bottom: .5em;
-            color: white;
+        .heading {
+            display: flex;
+            flex-direction: column;
             z-index: 2;
-            position: relative;
-            text-align: center;
-        }
 
-        button {
-            background-color: white;
-            z-index: 2;
-            position: relative;
+            h2 {
+                font-size: 1.5em;
+                color: white;
+                max-width: 600px;
+                margin-bottom: 1em;
+            }
+
+            a {
+                position: relative;
+                z-index: 2;
+                background-color: white;
+            }
         }
 
         .overlay {
@@ -553,13 +556,14 @@
             top: 0;
             left: 0;
             position: absolute;
-            opacity: .90;
+            opacity: 90%;
         }
     }
 
     #why {
         padding: $padding-xl $padding-md 15em $padding-md;
-        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img06M.webp) center / cover;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(/assets/img06M.webp) center / cover;
 
         .container {
             display: grid;
@@ -574,7 +578,7 @@
                 span {
                     font-weight: bold;
                     font-size: 2em;
-                    margin-right: .1em;
+                    margin-right: 0.1em;
                 }
             }
 
@@ -607,7 +611,7 @@
 
             h2 {
                 font-size: 2.5em;
-                margin-bottom: .1em;
+                margin-bottom: 0.1em;
                 color: $secondary;
                 text-transform: uppercase;
             }
@@ -618,7 +622,7 @@
             }
 
             a {
-                margin-bottom: .5em;
+                margin-bottom: 0.5em;
             }
         }
 
@@ -643,7 +647,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: .5em;
+                padding: 0.5em;
 
                 img {
                     width: 2em;
@@ -654,7 +658,7 @@
 
                 &>div {
                     p {
-                        margin-bottom: .3em;
+                        margin-bottom: 0.3em;
                     }
 
                     a {
@@ -691,7 +695,7 @@
             h2 {
                 font-size: 2.5em;
                 color: $secondary;
-                margin-bottom: .1em;
+                margin-bottom: 0.1em;
                 text-transform: uppercase;
             }
 
@@ -754,8 +758,8 @@
                         }
 
                         p {
-                            margin-bottom: .7em;
-                            font-size: .8em;
+                            margin-bottom: 0.7em;
+                            font-size: 0.8em;
                         }
                     }
                 }
@@ -782,7 +786,7 @@
             h2 {
                 font-size: 2.5em;
                 color: $secondary;
-                margin-bottom: .3em;
+                margin-bottom: 0.3em;
             }
         }
 
@@ -840,7 +844,6 @@
                     background-color: $light-black;
                     position: relative;
                     z-index: 3;
-
 
                     &::after {
                         content: "";
@@ -968,7 +971,7 @@
             h2 {
                 font-size: 2.5em;
                 color: $secondary;
-                margin-bottom: .1em;
+                margin-bottom: 0.1em;
                 text-transform: uppercase;
             }
 
@@ -994,7 +997,7 @@
                     margin-bottom: 1em;
 
                     img {
-                        margin-right: .5em;
+                        margin-right: 0.5em;
                     }
                 }
 
@@ -1023,7 +1026,7 @@
 
                         h4 {
                             font-weight: bold;
-                            margin-bottom: .4em;
+                            margin-bottom: 0.4em;
                         }
 
                         p {
@@ -1039,13 +1042,8 @@
 
 @media (min-width: 768px) {
     #landing {
-
-
         .swiper-container {
-
             .landing-content {
-
-
                 h1 {}
 
                 p {
@@ -1053,7 +1051,6 @@
                 }
 
                 .btns {
-
                     a {}
 
                     a:nth-child(1) {}
@@ -1063,10 +1060,7 @@
             }
 
             .swiper-wrapper {
-
                 .swiper-slide {}
-
-
             }
         }
 
@@ -1076,23 +1070,18 @@
     }
 
     #intro {
-
         .container {
             .imgs {
-
                 .large-img {
                     img {}
                 }
 
                 .small-img {
-
                     img {}
                 }
             }
 
             .content {
-
-
                 span {}
 
                 h2 {}
@@ -1100,15 +1089,10 @@
                 p {}
 
                 .tabs-container {
-
-
                     .control {
-
 
                         // 2
                         .tab-controls {
-
-
                             li {
                                 button {}
 
@@ -1124,17 +1108,11 @@
                             flex-direction: row;
 
                             .content-img-container {
-
-
                                 img {}
                             }
 
                             ul {
-
-
                                 li {
-
-
                                     img {}
 
                                     p {}
@@ -1148,12 +1126,10 @@
     }
 
     #services {
-
         .container {
             grid-template-columns: repeat(2, 1fr);
 
             .item {
-
                 width: 100%;
 
                 img {}
@@ -1164,7 +1140,6 @@
             }
 
             .heading {
-
                 span {}
 
                 h2 {}
@@ -1179,11 +1154,7 @@
     }
 
     #team {
-
-
         .heading {
-
-
             span {}
 
             h2 {}
@@ -1196,19 +1167,12 @@
             place-items: center;
 
             .item {
-
-
                 .img-box {
-
                     img {}
                 }
 
                 .bio {
-
-
                     &>div {
-
-
                         h3 {}
 
                         p {}
@@ -1219,10 +1183,7 @@
     }
 
     #test {
-
         .heading {
-
-
             span {}
 
             h2 {}
@@ -1236,21 +1197,16 @@
             grid-gap: 1em;
 
             .item {
-
-
                 .stars {
-
                     img {}
                 }
 
                 p {}
 
                 .info {
-
                     img {}
 
                     &>div {
-
                         h4 {}
 
                         p {}
@@ -1266,10 +1222,7 @@
         height: 768px;
 
         .swiper-container {
-
             .landing-content {
-
-
                 h1 {}
 
                 p {
@@ -1277,7 +1230,6 @@
                 }
 
                 .btns {
-
                     a {}
 
                     a:nth-child(1) {}
@@ -1287,22 +1239,28 @@
             }
 
             .swiper-wrapper {
-
                 .swiper-slide {}
 
                 .swiper-landing-1 {
-                    background: linear-gradient(135deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .1)), url(/assets/img01.webp) center / cover;
+                    background: linear-gradient(135deg,
+                            rgba(0, 0, 0, 0.8),
+                            rgba(0, 0, 0, 0.1)),
+                        url(/assets/img01.webp) center / cover;
                 }
 
                 .swiper-landing-2 {
-                    background: linear-gradient(135deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .1)), url(/assets/img02.jpg) center / cover;
+                    background: linear-gradient(135deg,
+                            rgba(0, 0, 0, 0.8),
+                            rgba(0, 0, 0, 0.1)),
+                        url(/assets/img02L.webp) center / cover;
                 }
 
                 .swiper-landing-3 {
-                    background: linear-gradient(135deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .1)), url(/assets/img06L.webp) center / cover;
+                    background: linear-gradient(135deg,
+                            rgba(0, 0, 0, 0.8),
+                            rgba(0, 0, 0, 0.1)),
+                        url(/assets/img06L.webp) center / cover;
                 }
-
-
             }
         }
 
@@ -1322,14 +1280,10 @@
             border-right: 1px solid #a4a4a4;
 
             a {
-
-
                 img {}
             }
 
             &>div {
-
-
                 p {}
 
                 p:nth-child(1) {}
@@ -1355,20 +1309,16 @@
             margin: auto;
 
             .imgs {
-
                 .large-img {
                     img {}
                 }
 
                 .small-img {
-
                     img {}
                 }
             }
 
             .content {
-
-
                 span {}
 
                 h2 {}
@@ -1376,15 +1326,10 @@
                 p {}
 
                 .tabs-container {
-
-
                     .control {
-
 
                         // 2
                         .tab-controls {
-
-
                             li {
                                 button {}
 
@@ -1400,17 +1345,11 @@
                             flex-direction: row;
 
                             .content-img-container {
-
-
                                 img {}
                             }
 
                             ul {
-
-
                                 li {
-
-
                                     img {}
 
                                     p {}
@@ -1423,8 +1362,26 @@
         }
     }
 
+    #small-contact {
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+
+            h2 {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
     #why {
-        background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(/assets/img06L.webp) center / cover;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+            url(/assets/img06L.webp) center / cover;
 
         .container {
             display: grid;
@@ -1451,7 +1408,6 @@
         max-width: 900px;
 
         .text {
-
             span {}
 
             h2 {}
@@ -1462,12 +1418,9 @@
         }
 
         .img-container {
-
             img {}
 
             &>div {
-
-
                 img {}
 
                 &>div {
@@ -1480,11 +1433,7 @@
     }
 
     #team {
-
-
         .heading {
-
-
             span {}
 
             h2 {}
@@ -1499,19 +1448,12 @@
             margin: auto;
 
             .item {
-
-
                 .img-box {
-
                     img {}
                 }
 
                 .bio {
-
-
                     &>div {
-
-
                         h3 {}
 
                         p {}
@@ -1522,8 +1464,6 @@
     }
 
     #projects {
-
-
         .heading {
             display: flex;
             flex-direction: row;
@@ -1535,19 +1475,13 @@
             span {}
 
             h2 {
-
-                margin-bottom: .0;
+                margin-bottom: 0;
             }
         }
 
         .portSwiper {
-
-
             .swiper-wrapper {
-
-
                 .swiper-slide {
-
                     img {}
                 }
             }
@@ -1555,10 +1489,7 @@
     }
 
     #test {
-
         .heading {
-
-
             span {}
 
             h2 {}
@@ -1572,21 +1503,18 @@
             grid-gap: 1em;
 
             .item {
-                transition: all .5s;
+                transition: all 0.5s;
 
                 .stars {
-
                     img {}
                 }
 
                 p {}
 
                 .info {
-
                     img {}
 
                     &>div {
-
                         h4 {}
 
                         p {}
@@ -1603,12 +1531,8 @@
 
 @media (min-width: 1200px) {
     #landing {
-
         .swiper-container {
-
             .landing-content {
-
-
                 h1 {}
 
                 p {
@@ -1616,7 +1540,6 @@
                 }
 
                 .btns {
-
                     a {}
 
                     a:nth-child(1) {}
@@ -1626,10 +1549,7 @@
             }
 
             .swiper-wrapper {
-
                 .swiper-slide {}
-
-
             }
         }
 
@@ -1643,13 +1563,10 @@
     .landing-overlap {
         margin-top: -4em;
         box-shadow: $box-shadow;
-        transition: all .5s;
+        transition: all 0.5s;
 
         &>div {
-
             a {
-
-
                 img {
                     width: 2.5em;
                     height: 2.5em;
@@ -1657,8 +1574,6 @@
             }
 
             &>div {
-
-
                 p {}
 
                 p:nth-child(1) {}
@@ -1671,7 +1586,6 @@
     }
 
     #intro {
-
         .container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1697,8 +1611,6 @@
             }
 
             .content {
-
-
                 span {}
 
                 h2 {}
@@ -1706,15 +1618,10 @@
                 p {}
 
                 .tabs-container {
-
-
                     .control {
-
 
                         // 2
                         .tab-controls {
-
-
                             li {
                                 button {}
 
@@ -1727,19 +1634,12 @@
 
                     .contents {
                         .tab-content {
-
                             .content-img-container {
-
-
                                 img {}
                             }
 
                             ul {
-
-
                                 li {
-
-
                                     img {}
 
                                     p {}
@@ -1753,15 +1653,13 @@
     }
 
     #services {
-
         .container {
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 2em;
 
             .item {
-
                 width: 100%;
-                transition: all .5s;
+                transition: all 0.5s;
                 position: relative;
 
                 img {}
@@ -1769,18 +1667,15 @@
                 h4 {}
 
                 p {}
-
             }
 
             .heading {
-
                 span {}
 
                 h2 {}
             }
 
             .item:last-child {
-
                 p {}
             }
         }
@@ -1795,8 +1690,6 @@
         background-attachment: fixed;
 
         .container {
-
-
             .item {}
 
             h2 {
@@ -1810,12 +1703,8 @@
 
 @media (min-width: 1562px) {
     #landing {
-
         .swiper-container {
-
             .landing-content {
-
-
                 h1 {}
 
                 p {
@@ -1823,7 +1712,6 @@
                 }
 
                 .btns {
-
                     a {}
 
                     a:nth-child(1) {}
@@ -1833,10 +1721,7 @@
             }
 
             .swiper-wrapper {
-
                 .swiper-slide {}
-
-
             }
         }
 
@@ -1846,10 +1731,9 @@
             display: flex;
         }
     }
-
 }
 
-// animate 
+// animate
 @keyframes fadeUp {
     from {
         opacity: 0;

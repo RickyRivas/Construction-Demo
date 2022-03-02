@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body, html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -858,7 +858,7 @@ body, html {
     color: white;
     font-size: 3em;
     position: relative;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     max-width: 600px;
   }
   #landing .swiper-container .landing-content p {
@@ -896,8 +896,8 @@ body, html {
     color: black;
   }
   #landing .swiper-container .landing-content .btns a:nth-child(1):hover {
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     background-color: transparent;
     color: white;
   }
@@ -907,8 +907,8 @@ body, html {
     color: white;
   }
   #landing .swiper-container .landing-content .btns a:nth-child(2):hover {
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     background-color: #FE5E15;
     color: black;
   }
@@ -954,8 +954,8 @@ body, html {
   #landing .swiper-slide-active .landing-content p {
     -webkit-animation: fadeUp 1s ease-in-out forwards;
             animation: fadeUp 1s ease-in-out forwards;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s;
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
     opacity: 0;
   }
   #landing .swiper-slide-active .landing-content a {
@@ -997,7 +997,7 @@ body, html {
   }
   #landing .controller > div p {
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: 0.8em;
   }
   #landing .controller > div img {
     width: 1em;
@@ -1067,7 +1067,7 @@ body, html {
   }
   .landing-overlap > div > div p {
     color: black;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
   .landing-overlap > div > div p:nth-child(1) {
     font-size: 1.2em;
@@ -1132,7 +1132,7 @@ body, html {
     color: #001659;
     font-size: 2.5em;
     text-transform: uppercase;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
   #intro .container .content p {
     line-height: 1.5;
@@ -1184,7 +1184,7 @@ body, html {
     color: black;
   }
   #intro .container .content .tabs-container .control .tab-controls li .active::after {
-    content: '';
+    content: "";
     width: 100%;
     position: absolute;
     bottom: -3px;
@@ -1257,7 +1257,7 @@ body, html {
   #intro .container .content .tabs-container .contents .tab-content ul li img {
     width: 1.5em;
     height: 1.5em;
-    margin-right: .6em;
+    margin-right: 0.6em;
   }
   #intro .container .content .tabs-container .contents .tab-content ul li p {
     margin: 0;
@@ -1298,8 +1298,8 @@ body, html {
             flex-direction: column;
     position: relative;
     z-index: 1;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   #services .container .item img {
     width: 3em;
@@ -1314,7 +1314,7 @@ body, html {
   }
   #services .container .item p {
     line-height: 1.5;
-    font-size: .9em;
+    font-size: 0.9em;
   }
   #services .container .item .hover-img {
     position: absolute;
@@ -1325,8 +1325,8 @@ body, html {
     left: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/img11.webp) center/cover;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img11.webp) center/cover;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
     opacity: 0;
@@ -1351,11 +1351,11 @@ body, html {
   }
   #services .container .heading span {
     color: #FE5E15;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
   #services .container .heading h2 {
     font-size: 2.5em;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     color: #001659;
     text-transform: uppercase;
   }
@@ -1392,19 +1392,26 @@ body, html {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #small-contact h2 {
-    line-height: 1.5;
-    font-size: 1.6em;
-    margin-bottom: .5em;
-    color: white;
+  #small-contact .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     z-index: 2;
-    position: relative;
-    text-align: center;
   }
-  #small-contact button {
-    background-color: white;
-    z-index: 2;
+  #small-contact .heading h2 {
+    font-size: 1.5em;
+    color: white;
+    max-width: 600px;
+    margin-bottom: 1em;
+  }
+  #small-contact .heading a {
     position: relative;
+    z-index: 2;
+    background-color: white;
   }
   #small-contact .overlay {
     width: 100%;
@@ -1413,7 +1420,7 @@ body, html {
     top: 0;
     left: 0;
     position: absolute;
-    opacity: .90;
+    opacity: 90%;
   }
   #why {
     padding: 4em 1em 15em 1em;
@@ -1433,7 +1440,7 @@ body, html {
   #why .container h2 span {
     font-weight: bold;
     font-size: 2em;
-    margin-right: .1em;
+    margin-right: 0.1em;
   }
   #why .container p {
     line-height: 1.5;
@@ -1472,7 +1479,7 @@ body, html {
   }
   #why-over .text h2 {
     font-size: 2.5em;
-    margin-bottom: .1em;
+    margin-bottom: 0.1em;
     color: #001659;
     text-transform: uppercase;
   }
@@ -1481,7 +1488,7 @@ body, html {
     margin-bottom: 1em;
   }
   #why-over .text a {
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
   }
   #why-over .img-container {
     position: relative;
@@ -1510,7 +1517,7 @@ body, html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: .5em;
+    padding: 0.5em;
   }
   #why-over .img-container > div img {
     width: 2em;
@@ -1519,7 +1526,7 @@ body, html {
     margin-right: 1em;
   }
   #why-over .img-container > div > div p {
-    margin-bottom: .3em;
+    margin-bottom: 0.3em;
   }
   #why-over .img-container > div > div a {
     color: #FE5E15;
@@ -1557,7 +1564,7 @@ body, html {
   #team .heading h2 {
     font-size: 2.5em;
     color: #001659;
-    margin-bottom: .1em;
+    margin-bottom: 0.1em;
     text-transform: uppercase;
   }
   #team .heading p {
@@ -1638,8 +1645,8 @@ body, html {
     font-size: 30px;
   }
   #team .container .item .bio > div p {
-    margin-bottom: .7em;
-    font-size: .8em;
+    margin-bottom: 0.7em;
+    font-size: 0.8em;
   }
   #projects {
     padding: 4em 1em;
@@ -1673,7 +1680,7 @@ body, html {
   #projects .heading h2 {
     font-size: 2.5em;
     color: #001659;
-    margin-bottom: .3em;
+    margin-bottom: 0.3em;
   }
   #projects .portSwiper {
     width: 100%;
@@ -1868,7 +1875,7 @@ body, html {
   #test .heading h2 {
     font-size: 2.5em;
     color: #001659;
-    margin-bottom: .1em;
+    margin-bottom: 0.1em;
     text-transform: uppercase;
   }
   #test .heading p {
@@ -1896,7 +1903,7 @@ body, html {
     margin-bottom: 1em;
   }
   #test .container .item .stars img {
-    margin-right: .5em;
+    margin-right: 0.5em;
   }
   #test .container .item p {
     line-height: 1.5;
@@ -1936,7 +1943,7 @@ body, html {
   }
   #test .container .item .info > div h4 {
     font-weight: bold;
-    margin-bottom: .4em;
+    margin-bottom: 0.4em;
   }
   #test .container .item .info > div p {
     padding: 0;
@@ -1989,7 +1996,7 @@ body, html {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(/assets/img01.webp) center/cover;
   }
   #landing .swiper-container .swiper-wrapper .swiper-landing-2 {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(/assets/img02.jpg) center/cover;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(/assets/img02L.webp) center/cover;
   }
   #landing .swiper-container .swiper-wrapper .swiper-landing-3 {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(/assets/img06L.webp) center/cover;
@@ -2029,6 +2036,26 @@ body, html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  #small-contact .heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: 1000px;
+  }
+  #small-contact .heading h2 {
+    margin-bottom: 0;
   }
   #why {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(/assets/img06L.webp) center/cover;
@@ -2077,7 +2104,7 @@ body, html {
     max-width: 1000px;
   }
   #projects .heading h2 {
-    margin-bottom: .0;
+    margin-bottom: 0;
   }
   #test .container {
     display: -ms-grid;
@@ -2087,8 +2114,8 @@ body, html {
     grid-gap: 1em;
   }
   #test .container .item {
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   #test .container .item:hover {
     -webkit-transform: translateY(-10px);
@@ -2107,8 +2134,8 @@ body, html {
     margin-top: -4em;
     -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
             box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .landing-overlap > div a img {
     width: 2.5em;
@@ -2142,8 +2169,8 @@ body, html {
   }
   #services .container .item {
     width: 100%;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     position: relative;
   }
   #small-contact {

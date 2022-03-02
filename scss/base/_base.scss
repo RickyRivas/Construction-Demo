@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body, html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 // Scale font-szie from a min of 16px (at 320px viewpoort) to a maximum of 22px (at a 1000px viewport)
 @media screen and (min-width: 320px) {
