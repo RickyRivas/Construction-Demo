@@ -15,13 +15,16 @@
 // 4. Layout-related sections
 @import
   'layout/header1',
-  'layout/footer1';
+  'layout/footer1',
+  'layout/pageHeading';
+
 
 // components
-
 @import 'components/button';
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/contact',
+  'pages/gallery';
 
       

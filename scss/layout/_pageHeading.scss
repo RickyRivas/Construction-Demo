@@ -1,0 +1,100 @@
+@media (min-width: 0rem) {
+    #page-header {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 200px;
+        background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(/assets/img01.webp) center / cover;
+        color: white;
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $primary;
+            opacity: .80;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .heading-overlap {
+        width: 90%;
+        max-width: 550px;
+        margin: auto;
+        padding: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: $box-shadow;
+        margin-top: -2em;
+        position: relative;
+        background-color: white;
+
+        h1 {
+            position: relative;
+            font-size: 2rem;
+            color: $secondary;
+            text-transform: uppercase;
+            margin-bottom: .3em;
+            text-align: center;
+        }
+        ol {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li {
+                a {
+                    color: $primary;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+            li:nth-child(2){
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &::before {
+                    background: url(/assets/right-arrow.svg) center / cover;
+                    width: 1em;
+                    height: 1em;
+                    content: '';
+                    position: relative;
+                    margin: 0 .5em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    #page-header {
+
+        height: 250px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    #page-header {
+        height: 300px;
+    }
+
+    .heading-overlap {
+        width: 100%;
+        margin-top: -3em;
+    }
+}
+
+@media (min-width: 1200px) {
+    #page-header {
+        background-attachment: fixed;
+    }
+}
