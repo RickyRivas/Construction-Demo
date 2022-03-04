@@ -84,11 +84,13 @@
                             border: 1px solid $gray-200;
                             // A reset of styles, including removing the default dropdown arrow
                             appearance: none;
+                            color: #222;
                             // Additional resets for further consistency
                             margin: 0;
                             width: 100%;
                             font-family: inherit;
                             cursor: inherit;
+                            font-size: inherit;
                             line-height: inherit;
                             // color: #a4a4a4;
                             background-color: white;

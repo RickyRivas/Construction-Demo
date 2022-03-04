@@ -36,7 +36,7 @@
                 .bio {
                     width: 90%;
                     box-shadow: $box-shadow;
-                    padding: 1em;
+                    padding: .5em 1em;
                     margin-top: -40px;
                     z-index: 2;
                     position: relative;
@@ -52,7 +52,7 @@
 
                         h3 {
                             font-weight: bold;
-                            font-size: 30px;
+                            font-size: 1em;
                         }
 
                         p {
@@ -111,6 +111,57 @@
             }
         }
     }
+
+    #qual {
+        width: 100vw;
+        padding: $padding-xl $padding-md;
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 1em;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+
+            .item {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 2em;
+                border: 1px solid #c0c0c0;
+
+                img {
+                    width: 3em;
+                    height: 3em;
+                    margin-right: 1em;
+                }
+
+                h3 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 768px) {
+    #qual {
+
+
+        .container {
+
+            grid-template-columns: repeat(2, 1fr);
+
+            .item {
+
+
+                img {}
+
+                h3 {}
+            }
+        }
+    }
 }
 
 @media(min-width: 1024px) {
@@ -123,7 +174,7 @@
 
             .item {
                 align-self: start;
-                
+
                 .img-box {
                     height: 450px;
 
@@ -136,8 +187,7 @@
 
                         h3 {}
 
-                        p {
-                        }
+                        p {}
                     }
                 }
             }
@@ -152,6 +202,7 @@
 
                     .decor {
                         margin-bottom: 2.5em;
+
                         img {}
 
                         .line {}
@@ -161,6 +212,26 @@
                         max-width: unset;
                     }
                 }
+            }
+        }
+    }
+
+    #qual {
+
+
+        .container {
+
+            grid-template-columns: repeat(3, 1fr);
+
+            .item {
+                transition: all .5s;
+                &:hover {
+                    box-shadow: $box-shadow;
+                }
+
+                img {}
+
+                h3 {}
             }
         }
     }

@@ -2393,7 +2393,7 @@ body, html {
     width: 90%;
     -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
             box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
-    padding: 1em;
+    padding: .5em 1em;
     margin-top: -40px;
     z-index: 2;
     position: relative;
@@ -2420,7 +2420,7 @@ body, html {
   }
   #about .container .item .bio > div h3 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1em;
   }
   #about .container .item .bio > div p {
     margin-bottom: 0.7em;
@@ -2479,6 +2479,48 @@ body, html {
     margin-bottom: 1em;
     max-width: 600px;
   }
+  #qual {
+    width: 100vw;
+    padding: 4em 1em;
+  }
+  #qual .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 1em;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  #qual .container .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2em;
+    border: 1px solid #c0c0c0;
+  }
+  #qual .container .item img {
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+  }
+  #qual .container .item h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  #qual .container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2505,6 +2547,18 @@ body, html {
   }
   #about .container .context .header p {
     max-width: unset;
+  }
+  #qual .container {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  #qual .container .item {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  #qual .container .item:hover {
+    -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -2781,10 +2835,12 @@ body, html {
     border: 1px solid #e9ecef;
     -moz-appearance: none;
          appearance: none;
+    color: #222;
     margin: 0;
     width: 100%;
     font-family: inherit;
     cursor: inherit;
+    font-size: inherit;
     line-height: inherit;
     background-color: white;
     position: relative;
