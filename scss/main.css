@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -6,8 +6,9 @@
   padding: 0;
 }
 
-body, html {
-  font-family: 'Open Sans', sans-serif;
+body,
+html {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media screen and (min-width: 320px) {
@@ -2621,7 +2622,7 @@ body, html {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
-    z-index: 99;
+    z-index: 1001;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

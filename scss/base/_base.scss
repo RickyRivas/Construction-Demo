@@ -1,20 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-body, html {
-  font-family: 'Open Sans', sans-serif;
+
+body,
+html {
+  font-family: 'Source Sans Pro', sans-serif;
 }
+
 // Scale font-szie from a min of 16px (at 320px viewpoort) to a maximum of 22px (at a 1000px viewport)
 @media screen and (min-width: 320px) {
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
   }
 }
+
 @media screen and (min-width: 1000px) {
   html {
     font-size: 20px;
   }
-} 
+}
