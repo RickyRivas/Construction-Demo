@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="/scss/main.css">
     <link href="scss/swiper-bundle.min.css" rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <title>Construction Demo by RR | Business | Tulsa, OK</title>
+    <title>Construction Demo by RR | Contact Us | Tulsa, OK</title>
 </head>
 
 <body>
@@ -76,30 +76,30 @@
             <div class="container">
                 <div class="form-container">
                     <form name="Contact Form" id='contact-form' method="POST" data-netlify="true">
-                        <h3>Get In Touch</h3>
+                        <h2>Get In Touch</h2>
                         <div class="flex">
                             <div class="form-control dropdown">
                                 <p>Subject</p>
-                                <select name="contact-reason" form="contact-form" required>
+                                <select name="contact-reason" form="contact-form" aria-label="contact reason" required>
                                     <option value="" disabled selected>Select an option</option>
                                     <option value="option">Option 1</option>
                                     <option value="optiontwo">Option 2</option>
                                     <option value="option3">Option 3</option>
                                 </select>
                             </div>
-                            <div class="form-control" for="name">
+                            <div class="form-control">
                                 <p>Your Name:</p>
-                                <input type="text" name="name" required />
+                                <input type="text" name="name" aria-label="Your name" required />
                             </div>
                         </div>
                         <div class="flex">
                             <div class="form-control">
                                 <p>Your Email:</p>
-                                <input type="email" name="email" placeholder="" required />
+                                <input type="email" name="email" aria-label="Your email" placeholder="" required />
                             </div>
                             <div class="form-control">
                                 <p>Your Phone:</p>
-                                <input type="number" name="number" required />
+                                <input type="number" name="number" aria-label="Your phone number" required />
                             </div>
                         </div>
                         <div class="form-control">
