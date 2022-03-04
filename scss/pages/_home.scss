@@ -190,12 +190,12 @@
 
         &>div {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             border-bottom: 1px solid #a4a4a4;
             width: 100%;
             max-width: 600px;
-            padding: 2em 1em;
+            padding: 3em;
 
             a {
                 color: black;
@@ -1069,6 +1069,44 @@
         .swiper-slide-active {}
 
         .controller {}
+    }
+
+    .landing-overlap {
+
+        &>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #a4a4a4;
+            width: 100%;
+            max-width: 600px;
+            padding: 2em 1em;
+
+            a {
+
+                img {
+                }
+            }
+
+            &>div {
+
+                p {
+
+                }
+
+                p:nth-child(1) {
+
+                }
+
+                a.phone {
+
+                }
+            }
+        }
+
+        &>div:nth-child(3) {
+
+        }
     }
 
     #intro {
