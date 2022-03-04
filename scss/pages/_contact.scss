@@ -1,111 +1,257 @@
-@media(min-width: 0em) {
-    #about {
-        padding: $padding-xl $padding-md;
+@media (min-width: 0em) {
+    #contact {
         width: 100vw;
+        position: relative;
 
         .container {
             width: 100%;
-            max-width: 1000px;
-            margin: auto;
             display: flex;
             flex-direction: column;
+            padding: $padding-lg $padding-md;
 
-            .item {
+            .form-container {
                 display: flex;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 flex-direction: column;
-                width: 100%;
-                max-width: 360px;
+                // change for larger screens
+                margin-bottom: $margin-xl;
 
-                .img-box {
-                    height: 400px;
+
+                form {
                     width: 100%;
-                    position: relative;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        object-fit: cover;
-                    }
-                }
-
-                .bio {
-                    width: 90%;
                     box-shadow: $box-shadow;
-                    padding: 1em;
-                    margin-top: -40px;
-                    z-index: 2;
-                    position: relative;
+                    padding: 2em;
                     background-color: white;
-                    border-bottom: 5px solid $primary;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
 
-                    &>div {
+                    h3 {
+                        font-size: $font-size-base * 2;
+                        margin-bottom: .5em;
+                    }
+
+                    .form-control {
                         display: flex;
                         flex-direction: column;
-
-                        h3 {
-                            font-weight: bold;
-                            font-size: 30px;
-                        }
+                        margin-bottom: $margin-md;
 
                         p {
-                            margin-bottom: 0.7em;
-                            font-size: 0.8em;
+                            margin-bottom: $margin-sm;
+                        }
+
+                        input[type="text"] {
+                            width: 100%;
+                            border-radius: unset;
+                            padding: $padding-sm;
+                            font-size: 16px;
+                            background: #f8f9fc;
+                            border: 1px solid $gray-200;
+                        }
+
+                        input[type="number"] {
+                            width: 100%;
+                            border-radius: unset;
+                            padding: $padding-sm;
+                            border: 1px solid $gray-200;
+                            font-size: 16px;
+                            background: #f8f9fc;
+                        }
+
+                        input[type="email"] {
+                            width: 100%;
+                            border-radius: unset;
+                            padding: $padding-sm;
+                            border: 1px solid $gray-200;
+                            font-size: 16px;
+                            background: #f8f9fc;
+                        }
+
+                        textarea {
+                            max-width: 100%;
+                            min-width: 100%;
+                            border-radius: unset;
+                            padding: $padding-md;
+                            border: 1px solid $gray-200;
+                            // resize: none;
+                            margin-bottom: $margin-md;
+                            font-family: inherit;
+                            background: #f8f9fc;
+                            font-size: 16px;
+                        }
+
+                        select {
+                            width: 100%;
+                            padding: $padding-sm;
+                            border: 1px solid $gray-200;
+                            // A reset of styles, including removing the default dropdown arrow
+                            appearance: none;
+                            // Additional resets for further consistency
+                            margin: 0;
+                            width: 100%;
+                            font-family: inherit;
+                            cursor: inherit;
+                            line-height: inherit;
+                            // color: #a4a4a4;
+                            background-color: white;
+                            position: relative;
+                            background: #f8f9fc;
+                            -webkit-appearance: none;
+                            background-image: url(/assets/down-chevron.svg);
+                            background-position: right 0.75em center;
+                            background-repeat: no-repeat;
+                            background-size: 15px;
+                        }
+
+                        button {
+                            margin: 0;
+                        }
+                    }
+
+                    // dropdown
+                    .dropdown {
+                        position: relative;
+
+                        img {
+                            top: 2.3rem;
+                            width: 1.5rem;
+                            position: absolute;
+                            right: 0.5rem;
                         }
                     }
                 }
             }
 
-            .context {
-                .header {
-                    margin-top: 2em;
-                    display: flex;
-                    align-items: flex-start;
-                    justify-content: center;
-                    flex-direction: column;
+            .info-container {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 2em;
+                box-shadow: $box-shadow;
+                background-color: white;
 
-                    span {
-                        color: $primary;
-                        text-transform: uppercase;
-                    }
-
-                    h2 {
-                        font-size: 2em;
-                        text-transform: uppercase;
-                        color: $secondary;
-                    }
-
-                    .decor {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        width: 100%;
-                        margin-bottom: 1em;
-
-                        img {
-                            width: 2em;
-                            height: 2em;
-                            margin-right: 1em;
-                        }
-
-                        .line {
-                            width: 50%;
-                            height: 1px;
-                            background-color: $primary;
-                        }
-                    }
-
+                div.para {
+                    width: 100%;
+                    border-bottom: 1px solid black;
+                    margin-bottom: 1em;
+                    padding-bottom: 1em;
                     p {
                         line-height: 1.5;
+                    }
+                }
+
+                h3 {
+                    text-transform: uppercase;
+                    margin-bottom: 1em;
+                }
+
+                ul {
+                    list-style: none;
+                    width: 100%;
+
+                    li {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
                         margin-bottom: 1em;
-                        max-width: 600px;
+
+                        a {
+                            color: $secondary;
+                            text-decoration: none;
+                            font-weight: bold;
+
+                            img {
+                                width: 2.5em;
+                                height: 2.5em;
+                                margin-right: 1em;
+                            }
+                        }
+
+                        &>div {
+                            display: flex;
+                            flex-direction: column;
+
+                            p {
+                                color: black;
+                                margin-bottom: 0.1em;
+                                font-size: .8em;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    body.dark-mode #contact {
+        .container {
+            .form-container {
+                h3 {
+                    color: white;
+                }
+
+                form {
+                    label {
+                        p {
+                            color: #222;
+                        }
+
+                        input[type="text"] {
+                            background-color: #222222;
+                            color: white;
+                            border: none;
+                        }
+
+                        input[type="email"] {
+                            background-color: #222222;
+                            color: white;
+                            border: none;
+                        }
+
+                        input[type="number"] {
+                            background-color: #222222;
+                            color: white;
+                            border: none;
+                        }
+
+                        textarea {
+                            border: none;
+                            background-color: #222222;
+                            color: white;
+                        }
+
+                        select {
+                            border: none;
+                            color: white;
+                            background-color: #222222;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+
+            .info-container {
+                #map {}
+
+                .items {
+                    background-color: #222;
+                }
+
+                .item {
+                    border-bottom: 1px solid $gray-700;
+
+                    p {
+                        margin-bottom: $margin-md;
+                    }
+
+                    a {
+                        color: white;
+                    }
+
+                    p:nth-of-type(2) {
+                        // text-align: right;
+                        color: #a4a4a4;
                     }
                 }
             }
@@ -113,52 +259,133 @@
     }
 }
 
-@media(min-width: 1024px) {
-    #about {
-
+@media (min-width: 768px) {
+    #contact {
         .container {
-            display: grid;
-            grid-template-columns: 35% 65%;
-            grid-gap: 2em;
+            width: 100%;
+            max-width: 650px;
+            margin: auto;
+            padding: $padding-lg $padding-md;
 
-            .item {
-                align-self: start;
-                
-                .img-box {
-                    height: 450px;
+            .form-container {
+                margin-bottom: $margin-lg;
 
-                    img {}
-                }
+                h3 {}
 
-                .bio {
+                form {
+                    width: 100%;
 
-                    &>div {
+                    .flex {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-gap: 1rem;
+                    }
 
-                        h3 {}
+                    .form-control {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: $margin-md;
 
                         p {
+                            margin-bottom: $margin-sm;
+                        }
+
+                        input[type="text"] {
+                            width: 100%;
+                            border-radius: unset;
+                            border: 1px solid $gray-200;
+                            padding: $padding-md;
+                            height: 46px;
+                        }
+
+                        input[type="email"] {
+                            width: 100%;
+                            border-radius: unset;
+                            border: 1px solid $gray-200;
+                            height: 46px;
+                            padding: $padding-md;
+                        }
+
+                        input[type="number"] {
+                            width: 100%;
+                            border-radius: unset;
+                            border: 1px solid $gray-200;
+                            height: 46px;
+                            padding: $padding-md;
+                        }
+
+                        textarea {
+                            height: 201px;
+                            border-radius: unset;
+                            padding: $padding-md;
+                            border: 1px solid $gray-200;
+                            margin-bottom: $margin-md;
+                            font-family: inherit;
+                            font-size: 16px;
+                        }
+
+                        select {
+                            width: 100%;
+                            border: 1px solid $gray-200;
+                            // A reset of styles, including removing the default dropdown arrow
+                            appearance: none;
+                            // Additional resets for further consistency
+                            margin: 0;
+                            width: 100%;
+                            font-family: inherit;
+                            font-size: inherit;
+                            // cursor: inherit;
+                            line-height: inherit;
+                            position: relative;
+                        }
+
+                        button {
+                            margin: 0;
                         }
                     }
                 }
             }
+        }
+    }
+}
 
-            .context {
-                .header {
-                    margin-top: 0;
+@media (min-width: 1024px) {
+    #contact {
 
-                    span {}
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1rem;
 
-                    h2 {}
+            .form-container {
+                margin-bottom: unset;
 
-                    .decor {
-                        margin-bottom: 2.5em;
-                        img {}
+                h3 {}
+            }
 
-                        .line {}
-                    }
+            .info-container {
+                h3 {}
 
-                    p {
-                        max-width: unset;
+                ul {
+
+                    li {
+
+
+                        a {
+
+
+                            img {}
+                        }
+
+                        &>div {
+
+
+                            p {}
+                        }
                     }
                 }
             }

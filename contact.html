@@ -22,6 +22,7 @@
 
     <link rel="stylesheet" href="/scss/main.css">
     <link href="scss/swiper-bundle.min.css" rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Construction Demo by RR | Business | Tulsa, OK</title>
 </head>
 
@@ -64,44 +65,85 @@
         <!-- Page Heading -->
         <section id="page-header"></section>
         <div class="heading-overlap">
-            <h1>About Us</h1>
+            <h1>Contact Us</h1>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item " aria-current="page">About</li>
+                <li class="breadcrumb-item " aria-current="page">Contact</li>
             </ol>
         </div>
         <!-- Page Heading -->
-        <section id="about">
+        <section id="contact">
             <div class="container">
-                <div class="item">
-                    <div class="img-box">
-                        <img src="/assets/img08M.webp" alt="team member" width="360" height="400">
-                    </div>
-                    <div class="bio">
-                        <div>
-                            <p>Sales Team Member</p>
-                            <h3>Member Name</h3>
+                <div class="form-container">
+                    <form name="Contact Form" id='contact-form' method="POST" data-netlify="true">
+                        <h3>Get In Touch</h3>
+                        <div class="flex">
+                            <div class="form-control dropdown">
+                                <p>Subject</p>
+                                <select name="contact-reason" form="contact-form" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="option">Option 1</option>
+                                    <option value="optiontwo">Option 2</option>
+                                    <option value="option3">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="form-control" for="name">
+                                <p>Your Name:</p>
+                                <input type="text" name="name" required />
+                            </div>
                         </div>
-                        <img src="/assets/hardhat.svg" alt="hardhat icon" width="50" height="50">
-                    </div>
+                        <div class="flex">
+                            <div class="form-control">
+                                <p>Your Email:</p>
+                                <input type="email" name="email" placeholder="" required />
+                            </div>
+                            <div class="form-control">
+                                <p>Your Phone:</p>
+                                <input type="number" name="number" required />
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <p>How can we help?</p>
+                            <textarea placeholder="" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
-                <div class="context">
-                    <div class="header">
-                        <span>Who We Are</span>
-                        <h2>Construction Demo</h2>
-                        <div class="decor">
-                            <img src="/assets/excavator.svg" alt="" width="20" height="20">
-                            <div class="line"></div>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum, at diam iaculis facilisi
-                            fusce. Volutpat sit ornare vitae, tellus massa habitant senectus viverra. In tincidunt
-                            adipiscing quam ultrices a. Quis sapien aliquet integer odio quam justo, tempus. Quis
-                            vulputate elit in erat ullamcorper aliquam nulla.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum, at diam iaculis facilisi
-                            fusce. Volutpat sit ornare vitae, tellus massa habitant senectus viverra. In tincidunt
-                            adipiscing quam ultrices a. Quis sapien aliquet integer odio quam justo, tempus. Quis
-                            vulputate elit in erat ullamcorper aliquam nulla.</p>
+                <div class="info-container">
+                    <h3>Construction Name</h3>
+                    <div class="para">
+                        <p>Feel free to contact us for any construction services. Give us a call for immediate help.</p>
                     </div>
+                    <ul>
+                        <h3>Contact Info</h3>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/telephone-call.svg" alt="Phone Icon" height="50" width="50">
+                            </a>
+                            <div>
+                                <p>Call Us</p>
+                                <a href="#" class='phone'>(918) 123 - 4567</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/place.svg" alt="Phone Icon" height="50" width="50">
+                            </a>
+                            <div>
+                                <p>Our Location</p>
+                                <a href="#" class='phone'>1234 E Street, Tulsa, Oklahoma, 12345</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/assets/email02.svg" alt="Phone Icon" height="50" width="50">
+                            </a>
+                            <div>
+                                <p>Business Email</p>
+                                <a href="#" class='phone'>construction@gmail.com</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -109,10 +151,10 @@
         <section id="small-contact">
             <div class="heading">
                 <div>
-                    <h2>Call an experienced home builder serving the best quality work for Tulsa, Oklahoma</h2>
+                    <h2>Thank you for visiting Construction Demo!</h2>
                     <!-- <p>Serving the best quality work for Tulsa, Oklahoma and surrounding areas</p> -->
                 </div>
-                <a href="contact.html" class="btn">Contact Us</a>
+                <a href="index.html" class="btn">Go Back Home</a>
             </div>
             <div class="overlay"></div>
         </section>
@@ -130,9 +172,9 @@
             <div class="col">
                 <h3>Navigation</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="gallery.html">Portfolio</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href='contact.html'>Contact</a></li>
                     <li><a href="services.html">Services</a></li>
                 </ul>
@@ -179,6 +221,12 @@
     <!-- Scripts -->
     <script src='scripts/swiper-bundle.min.js'></script>
     <script src='scripts/main.js'></script>
+    <script src="scripts/gallery.js"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
