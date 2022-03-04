@@ -86,7 +86,7 @@ html {
     width: max-content;
   }
   header nav .logo-wrapper img {
-    width: 100%;
+    width: auto;
     height: 100%;
     max-width: 250px;
     z-index: 2;
