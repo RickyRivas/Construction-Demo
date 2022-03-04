@@ -332,8 +332,15 @@
           font-size: $font-size-sm;
 
           a {
-            padding: 0.5em;
+            padding: 0.7em;
             color: #000;
+          }
+
+          &:hover {
+            &::after {
+              content: '';
+              width: 95%;
+            }
           }
         }
 

@@ -502,7 +502,7 @@
                 }
             }
 
-            .item:last-child {
+            .last {
                 background-color: transparent;
                 padding: 1em 0 0 0;
 
@@ -1145,7 +1145,7 @@
                 h2 {}
             }
 
-            .item:last-child {
+            .last {
                 padding: 0;
 
                 p {}
