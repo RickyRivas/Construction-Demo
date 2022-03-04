@@ -2831,6 +2831,7 @@ body, html {
     border-radius: unset;
     padding: 1em;
     border: 1px solid #e9ecef;
+    resize: none;
     margin-bottom: 1em;
     font-family: inherit;
     background: #f8f9fc;
