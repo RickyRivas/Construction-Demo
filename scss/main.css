@@ -1478,6 +1478,7 @@ body, html {
   #services .container .heading span {
     color: #FE5E15;
     margin-bottom: 0.5em;
+    text-transform: uppercase;
   }
   #services .container .heading h2 {
     font-size: 2.5em;
@@ -1602,6 +1603,7 @@ body, html {
   }
   #why-over .text span {
     color: #FE5E15;
+    text-transform: uppercase;
   }
   #why-over .text h2 {
     font-size: 2.5em;
@@ -2508,7 +2510,8 @@ body, html {
         -ms-flex-align: center;
             align-items: center;
     padding: 2em;
-    border: 1px solid #c0c0c0;
+    -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
   }
   #qual .container .item img {
     width: 3em;
@@ -2561,8 +2564,8 @@ body, html {
     transition: all .5s;
   }
   #qual .container .item:hover {
-    -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
-            box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 }
 

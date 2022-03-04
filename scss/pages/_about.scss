@@ -129,7 +129,7 @@
                 justify-content: flex-start;
                 align-items: center;
                 padding: 2em;
-                border: 1px solid #c0c0c0;
+                box-shadow: $box-shadow;
 
                 img {
                     width: 3em;
@@ -218,15 +218,15 @@
 
     #qual {
 
-
         .container {
 
             grid-template-columns: repeat(3, 1fr);
 
             .item {
                 transition: all .5s;
+
                 &:hover {
-                    box-shadow: $box-shadow;
+                    transform: translateY(-10px);
                 }
 
                 img {}
