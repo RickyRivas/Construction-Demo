@@ -132,10 +132,25 @@
           justify-content: center;
           align-items: center;
           flex-direction: column;
+          opacity: 1 !important;
 
           img {
             width: 1.5em;
             height: 1.5em;
+          }
+          &:hover {
+            opacity: 1;
+            position: absolute;
+            &::after {
+              content: '';
+              width: 1.5em;
+              height: 1.5em;
+              background-color: unset;
+              position: inherit;
+              bottom: unset;
+              left: unset;
+              opacity: 1;
+            }
           }
         }
       }
@@ -358,6 +373,9 @@
 
         .social-media {
           display: none;
+          &::after{
+            
+          }
         }
       }
 

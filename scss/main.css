@@ -179,10 +179,25 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    opacity: 1 !important;
   }
   header nav .nav-links .social-media img {
     width: 1.5em;
     height: 1.5em;
+  }
+  header nav .nav-links .social-media:hover {
+    opacity: 1;
+    position: absolute;
+  }
+  header nav .nav-links .social-media:hover::after {
+    content: '';
+    width: 1.5em;
+    height: 1.5em;
+    background-color: unset;
+    position: inherit;
+    bottom: unset;
+    left: unset;
+    opacity: 1;
   }
   header nav .mobile-flex {
     display: -webkit-box;
