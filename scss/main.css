@@ -152,7 +152,7 @@ html {
     content: '';
     width: 100%;
     height: 2px;
-    background-color: #FE5E15;
+    background-color: #F74F22;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -403,7 +403,7 @@ html {
     content: '';
     width: 95%;
     height: 2px;
-    background-color: #FE5E15;
+    background-color: #F74F22;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -594,7 +594,7 @@ html {
     content: '';
     width: 30%;
     height: 4px;
-    background-color: #FE5E15;
+    background-color: #F74F22;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -723,7 +723,7 @@ html {
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem 0;
-    background-color: #FE5E15;
+    background-color: #F74F22;
     color: white;
     z-index: 20;
     position: relative;
@@ -793,7 +793,7 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #FE5E15;
+    background-color: #F74F22;
     opacity: .80;
     top: 0;
     left: 0;
@@ -843,7 +843,7 @@ html {
             align-items: center;
   }
   .heading-overlap ol li a {
-    color: #FE5E15;
+    color: #F74F22;
     text-decoration: none;
   }
   .heading-overlap ol li a:hover {
@@ -899,7 +899,7 @@ html {
   width: -moz-max-content;
   width: max-content;
   padding: 15px 25px;
-  background-color: #FE5E15;
+  background-color: #F74F22;
   border: 0;
   color: black;
   text-decoration: none;
@@ -914,7 +914,7 @@ html {
 }
 
 .btn-primary {
-  background-color: #FE5E15;
+  background-color: #F74F22;
 }
 
 .btn-success {
@@ -978,7 +978,7 @@ html {
   padding: 1px;
   width: 2.5rem;
   height: 2.5rem;
-  background: #FE5E15;
+  background: #F74F22;
   border: 0;
   position: relative;
 }
@@ -1111,7 +1111,7 @@ html {
   }
   #landing .swiper-container .landing-content .btns a:nth-child(1) {
     margin-right: 1em;
-    border: 2px solid #FE5E15;
+    border: 2px solid #F74F22;
     color: black;
   }
   #landing .swiper-container .landing-content .btns a:nth-child(1):hover {
@@ -1121,14 +1121,14 @@ html {
     color: white;
   }
   #landing .swiper-container .landing-content .btns a:nth-child(2) {
-    border: 2px solid #FE5E15;
+    border: 2px solid #F74F22;
     background-color: transparent;
     color: white;
   }
   #landing .swiper-container .landing-content .btns a:nth-child(2):hover {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    background-color: #FE5E15;
+    background-color: #F74F22;
     color: black;
   }
   #landing .swiper-container .swiper-wrapper {
@@ -1154,16 +1154,16 @@ html {
             flex-direction: column;
   }
   #landing .swiper-container .swiper-wrapper .swiper-landing-1 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0))), url(/assets/img01M.webp) center/cover;
-    background: linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(/assets/img01M.webp) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/assets/img01M.webp) center/cover;
+    background: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img01M.webp) center/cover;
   }
   #landing .swiper-container .swiper-wrapper .swiper-landing-2 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0))), url(/assets/img02M.webp) center/cover;
-    background: linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(/assets/img02M.webp) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/assets/img02M.webp) center/cover;
+    background: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img02M.webp) center/cover;
   }
   #landing .swiper-container .swiper-wrapper .swiper-landing-3 {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0))), url(/assets/img06M.webp) center/cover;
-    background: linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url(/assets/img06M.webp) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/assets/img06M.webp) center/cover;
+    background: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/img06M.webp) center/cover;
   }
   #landing .swiper-slide-active .landing-content h1 {
     opacity: 0;
@@ -1292,7 +1292,7 @@ html {
     font-size: 1.2em;
   }
   .landing-overlap > div > div a.phone {
-    color: #FE5E15;
+    color: #F74F22;
   }
   .landing-overlap > div:nth-child(3) {
     border-bottom: none;
@@ -1344,7 +1344,7 @@ html {
     max-width: 600px;
   }
   #intro .container .content span {
-    color: #FE5E15;
+    color: #F74F22;
     text-transform: uppercase;
   }
   #intro .container .content h2 {
@@ -1408,7 +1408,7 @@ html {
     position: absolute;
     bottom: -3px;
     left: 0;
-    background-color: #FE5E15;
+    background-color: #F74F22;
     height: 6px;
   }
   #intro .container .content .tabs-container .contents {
@@ -1571,7 +1571,7 @@ html {
     padding: 0;
   }
   #services .container .heading span {
-    color: #FE5E15;
+    color: #F74F22;
     margin-bottom: 0.5em;
     text-transform: uppercase;
   }
@@ -1638,7 +1638,7 @@ html {
   #small-contact .overlay {
     width: 100%;
     height: 100%;
-    background-color: #FE5E15;
+    background-color: #F74F22;
     top: 0;
     left: 0;
     position: absolute;
@@ -1697,7 +1697,7 @@ html {
     padding: 2em;
   }
   #why-over .text span {
-    color: #FE5E15;
+    color: #F74F22;
     text-transform: uppercase;
   }
   #why-over .text h2 {
@@ -1752,7 +1752,7 @@ html {
     margin-bottom: 0.3em;
   }
   #why-over .img-container > div > div a {
-    color: #FE5E15;
+    color: #F74F22;
   }
   #team {
     padding: 4em 1em;
@@ -1782,7 +1782,7 @@ html {
   }
   #team .heading span {
     text-transform: uppercase;
-    color: #FE5E15;
+    color: #F74F22;
   }
   #team .heading h2 {
     font-size: 2.5em;
@@ -1843,7 +1843,7 @@ html {
     z-index: 2;
     position: relative;
     background-color: white;
-    border-bottom: 5px solid #FE5E15;
+    border-bottom: 5px solid #F74F22;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1898,7 +1898,7 @@ html {
   }
   #projects .heading span {
     text-transform: uppercase;
-    color: #FE5E15;
+    color: #F74F22;
   }
   #projects .heading h2 {
     font-size: 2.5em;
@@ -1961,7 +1961,7 @@ html {
     position: relative;
     -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
             box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
-    border-bottom: 3px solid #FE5E15;
+    border-bottom: 3px solid #F74F22;
   }
   #projects .controller .swiper-prev-port .left {
     width: 40px !important;
@@ -1999,7 +1999,7 @@ html {
     width: 100%;
     content: "";
     height: 100%;
-    background-color: #FE5E15;
+    background-color: #F74F22;
     -webkit-transform: translateX(101%);
             transform: translateX(101%);
   }
@@ -2030,7 +2030,7 @@ html {
     overflow: hidden;
     -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
             box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
-    border-bottom: 3px solid #FE5E15;
+    border-bottom: 3px solid #F74F22;
   }
   #projects .controller .swiper-next-port .right {
     width: 40px !important;
@@ -2067,7 +2067,7 @@ html {
     width: 100%;
     content: "";
     height: 100%;
-    background-color: #FE5E15;
+    background-color: #F74F22;
     -webkit-transform: translateX(-101%);
             transform: translateX(-101%);
   }
@@ -2093,7 +2093,7 @@ html {
   }
   #test .heading span {
     text-transform: uppercase;
-    color: #FE5E15;
+    color: #F74F22;
   }
   #test .heading h2 {
     font-size: 2.5em;
@@ -2231,19 +2231,22 @@ html {
     height: 768px;
   }
   #landing .swiper-container .landing-content {
-    padding: 0 5em;
+    padding: 0 6em;
   }
   #landing .swiper-container .landing-content p {
     font-size: 1.5em;
   }
   #landing .swiper-container .swiper-wrapper .swiper-landing-1 {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(/assets/img01.webp) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/img01.webp) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img01.webp) center/cover;
   }
   #landing .swiper-container .swiper-wrapper .swiper-landing-2 {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(/assets/img02L.webp) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/img02L.webp) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img02L.webp) center/cover;
   }
   #landing .swiper-container .swiper-wrapper .swiper-landing-3 {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(/assets/img06L.webp) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/img06L.webp) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img06L.webp) center/cover;
   }
   #landing .controller {
     right: 1.2em;
@@ -2252,8 +2255,6 @@ html {
     position: absolute;
     top: 50%;
     right: 1rem;
-    width: 40px;
-    height: 40px;
     background-color: #fff;
     z-index: 10;
     cursor: pointer;
@@ -2266,13 +2267,68 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 1em;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+    border-bottom: 3px solid #F74F22;
+  }
+  #landing .swiper-next-custom .right {
+    width: 30px !important;
+    height: 2px;
+    background-color: black;
+    position: relative;
+  }
+  #landing .swiper-next-custom .right::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    right: 0;
+    -webkit-transform-origin: 100%;
+            transform-origin: 100%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #landing .swiper-next-custom .right::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    right: 0;
+    -webkit-transform-origin: 100%;
+            transform-origin: 100%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #landing .swiper-next-custom::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 100%;
+    background-color: #F74F22;
+    -webkit-transform: translateX(-101%);
+            transform: translateX(-101%);
+  }
+  #landing .swiper-next-custom.pressedControl .right {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+  }
+  #landing .swiper-next-custom.pressedControl::before {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   #landing .swiper-prev-custom {
-    position: absolute;
+    padding: 1em;
+    -webkit-box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.15);
+    border-bottom: 3px solid #F74F22;
     top: 50%;
     left: 1rem;
-    width: 40px;
-    height: 40px;
     background-color: #fff;
     z-index: 10;
     display: -webkit-box;
@@ -2285,6 +2341,58 @@ html {
         -ms-flex-align: center;
             align-items: center;
     cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+  }
+  #landing .swiper-prev-custom .left {
+    width: 30px !important;
+    height: 2px;
+    background-color: #222;
+    position: relative;
+    z-index: 3;
+  }
+  #landing .swiper-prev-custom .left::after {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    -webkit-transform-origin: 0%;
+            transform-origin: 0%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  #landing .swiper-prev-custom .left::before {
+    content: "";
+    width: 15px;
+    height: 2px;
+    background-color: inherit;
+    position: absolute;
+    left: 0;
+    -webkit-transform-origin: 0%;
+            transform-origin: 0%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  #landing .swiper-prev-custom::before {
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 100%;
+    background-color: #F74F22;
+    -webkit-transform: translateX(101%);
+            transform: translateX(101%);
+  }
+  #landing .swiper-prev-custom.pressedControl .left {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+  }
+  #landing .swiper-prev-custom.pressedControl::before {
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .landing-overlap {
     -webkit-box-orient: horizontal;
@@ -2406,6 +2514,9 @@ html {
 }
 
 @media (min-width: 1200px) {
+  #landing .swiper-container .landing-content {
+    padding: 0 5em;
+  }
   #landing .swiper-container .landing-content p {
     font-size: 1.5em;
   }
@@ -2570,7 +2681,7 @@ input[type=number] {
     z-index: 2;
     position: relative;
     background-color: white;
-    border-bottom: 5px solid #FE5E15;
+    border-bottom: 5px solid #F74F22;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2615,7 +2726,7 @@ input[type=number] {
             flex-direction: column;
   }
   #about .container .context .header span {
-    color: #FE5E15;
+    color: #F74F22;
     text-transform: uppercase;
   }
   #about .container .context .header h2 {
@@ -2644,7 +2755,7 @@ input[type=number] {
   #about .container .context .header .decor .line {
     width: 50%;
     height: 1px;
-    background-color: #FE5E15;
+    background-color: #F74F22;
   }
   #about .container .context .header p {
     line-height: 1.5;

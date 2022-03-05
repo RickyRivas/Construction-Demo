@@ -98,17 +98,17 @@
                 }
 
                 .swiper-landing-1 {
-                    background: linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+                    background: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)),
                         url(/assets/img01M.webp) center / cover;
                 }
 
                 .swiper-landing-2 {
-                    background: linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+                    background: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)),
                         url(/assets/img02M.webp) center / cover;
                 }
 
                 .swiper-landing-3 {
-                    background: linear-gradient(top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+                    background: linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)),
                         url(/assets/img06M.webp) center / cover;
                 }
             }
@@ -1261,7 +1261,8 @@
 
         .swiper-container {
             .landing-content {
-                padding: 0 5em;
+                padding: 0 6em;
+
                 h1 {}
 
                 p {
@@ -1281,23 +1282,17 @@
                 .swiper-slide {}
 
                 .swiper-landing-1 {
-                    background: linear-gradient(135deg,
-                            rgba(0, 0, 0, 0.8),
-                            rgba(0, 0, 0, 0.1)),
+                    background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
                         url(/assets/img01.webp) center / cover;
                 }
 
                 .swiper-landing-2 {
-                    background: linear-gradient(135deg,
-                            rgba(0, 0, 0, 0.8),
-                            rgba(0, 0, 0, 0.1)),
+                    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
                         url(/assets/img02L.webp) center / cover;
                 }
 
                 .swiper-landing-3 {
-                    background: linear-gradient(135deg,
-                            rgba(0, 0, 0, 0.8),
-                            rgba(0, 0, 0, 0.1)),
+                    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
                         url(/assets/img06L.webp) center / cover;
                 }
             }
@@ -1313,29 +1308,148 @@
             position: absolute;
             top: 50%;
             right: 1rem;
-            width: 40px;
-            height: 40px;
+            // width: 40px;
+            // height: 40px;
             background-color: #fff;
             z-index: 10;
             cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // background-color: white;
+            // cursor: pointer;
+            padding: $padding-md;
+            // position: relative;
+            overflow: hidden;
+            box-shadow: $box-shadow;
+            border-bottom: 3px solid $primary;
 
+            .right {
+                width: 30px !important;
+                height: 2px;
+                background-color: black;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 15px;
+                    height: 2px;
+                    background-color: inherit;
+                    position: absolute;
+                    right: 0;
+                    transform-origin: 100%;
+                    transform: rotate(45deg);
+                }
+
+                &::before {
+                    content: "";
+                    width: 15px;
+                    height: 2px;
+                    background-color: inherit;
+                    position: absolute;
+                    right: 0;
+                    transform-origin: 100%;
+                    transform: rotate(-45deg);
+                }
+            }
+
+            &::before {
+                position: absolute;
+                width: 100%;
+                content: "";
+                height: 100%;
+                background-color: $primary;
+                transform: translateX(-101%);
+            }
+
+            &.pressedControl {
+                .right {
+                    transition: all 1000ms;
+                }
+
+                &::before {
+                    transition: all 1000ms;
+                    transform: translateX(0);
+                }
+            }
         }
 
         .swiper-prev-custom {
-            position: absolute;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // background-color: white;
+            // cursor: pointer;
+            padding: 1em;
+            // overflow: hidden;
+            // position: relative;
+            box-shadow: $box-shadow;
+            border-bottom: 3px solid $primary;
             top: 50%;
             left: 1rem;
-            width: 40px;
-            height: 40px;
+            // width: 40px;
+            // height: 40px;
             background-color: #fff;
             z-index: 10;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            position: absolute;
+            overflow: hidden;
+
+            .left {
+                width: 30px !important;
+                height: 2px;
+                background-color: $light-black;
+                position: relative;
+                z-index: 3;
+
+                &::after {
+                    content: "";
+                    width: 15px;
+                    height: 2px;
+                    background-color: inherit;
+                    position: absolute;
+                    left: 0;
+                    transform-origin: 0%;
+                    transform: rotate(45deg);
+                }
+
+                &::before {
+                    content: "";
+                    width: 15px;
+                    height: 2px;
+                    background-color: inherit;
+                    position: absolute;
+                    left: 0;
+                    transform-origin: 0%;
+                    transform: rotate(-45deg);
+                }
+            }
+
+            &::before {
+                position: absolute;
+                width: 100%;
+                content: "";
+                height: 100%;
+                background-color: $primary;
+                transform: translateX(101%);
+            }
+
+            &.pressedControl {
+                .left {
+                    transition: all 1000ms;
+                }
+
+                &::before {
+                    transition: all 1000ms;
+                    transform: translateX(0);
+                }
+            }
 
         }
     }
@@ -1602,6 +1716,7 @@
     #landing {
         .swiper-container {
             .landing-content {
+                padding: 0 5em;
                 h1 {}
 
                 p {
