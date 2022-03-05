@@ -43,10 +43,8 @@
                     <li class="nav-link"><a href="about.html">About</a></li>
                     <li class="nav-link"><a href="contact.html">Contact</a></li>
                     <li class="social-media">
-                        <!-- <img src="assets/instagramwhite.svg" alt="instagram icon" class="" /> -->
-                        <a href="mailto:rivaswebdesigns@gmail.com"><img
-                                src="https://d33wubrfki0l68.cloudfront.net/05e54babfd7539afe96921c2ee7e9f679371316b/bf936/assets/paper-plane.svg"
-                                alt="email" class="" /></a>
+                        <a href="mailto:rivaswebdesigns@gmail.com"><img src="/assets/email.svg" alt="email"
+                                class="" /></a>
                     </li>
                 </ul>
                 <!-- </div> -->
@@ -132,6 +130,12 @@
             <div class="overlay"></div>
         </section>
         <!-- Mini Contact End -->
+        <div class="fixed">
+            <button class="top-link hide" id="js-top">
+                <img src="assets/up-arrow.svg" alt="up arrow" class="" width='22' height='22' />
+                <span class="screen-reader-text">Contact</span>
+            </button>
+        </div>
     </main>
     <!-- Main End -->
     <!-- Footer -->
@@ -206,6 +210,31 @@
         }
         burger.addEventListener('click', toggleNav)
         navOverlay.addEventListener('click', toggleNav)
+        const scrollToTopButton = document.getElementById("js-top");
+
+        const scrollFunc = () => {
+            let y = window.scrollY;
+            if (y > 0) {
+                scrollToTopButton.className = "top-link show";
+            } else {
+                scrollToTopButton.className = "top-link hide";
+            }
+        };
+
+        window.addEventListener("scroll", scrollFunc);
+
+        const scrollToTop = () => {
+            const c = document.documentElement.scrollTop || document.body.scrollTop;
+            if (c > 0) {
+                window.requestAnimationFrame(scrollToTop);
+                window.scrollTo(0, c - c / 10);
+            }
+        };
+
+        scrollToTopButton.onclick = function (e) {
+            e.preventDefault();
+            scrollToTop();
+        };
     </script>
 </body>
 

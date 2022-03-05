@@ -46,9 +46,8 @@
                     <li class="nav-link"><a href="contact.html">Contact</a></li>
                     <li class="social-media">
                         <!-- <img src="assets/instagramwhite.svg" alt="instagram icon" class="" /> -->
-                        <a href="mailto:rivaswebdesigns@gmail.com"><img
-                                src="https://d33wubrfki0l68.cloudfront.net/05e54babfd7539afe96921c2ee7e9f679371316b/bf936/assets/paper-plane.svg"
-                                alt="email" class="" /></a>
+                        <a href="mailto:rivaswebdesigns@gmail.com"><img src="/assets/email.svg" alt="email"
+                                class="" /></a>
                     </li>
                 </ul>
                 <!-- </div> -->
@@ -485,6 +484,12 @@
             <div class="overlay"></div>
         </section>
         <!-- Mini Contact End -->
+        <div class="fixed">
+            <button class="top-link hide" id="js-top">
+                <img src="assets/up-arrow.svg" alt="up arrow" class="" width='22' height='22' />
+                <span class="screen-reader-text">Contact</span>
+            </button>
+        </div>
     </main>
     <!-- Main End -->
     <!-- Footer -->
@@ -545,49 +550,9 @@
     </div>
     <!-- Footer -->
     <!-- Scripts -->
-    <!-- <script src='scripts/swiper-bundle.min.js'></script>
-        <script src='scripts/main.js'></script>
-        <script>
-            // tabs 
-            const controlTabs = Array.from(document.querySelectorAll(".tab-control"));
-            const tabContents = Array.from(document.querySelectorAll(".tab-content"));
-            const tabControlContainer = document.querySelector(".tab-controls");
-    
-            function showTab() {
-                const activeTab = controlTabs.find((tab) =>
-                    tab.classList.contains("active")
-                );
-                const activeTabContent = tabContents.find(
-                    (tabContent) => tabContent.dataset.content === activeTab.dataset.tab
-                );
-                activeTabContent.style.display = "flex";
-                hideInactiveTabContents(activeTab);
-            }
-    
-            function hideInactiveTabContents(activeTab) {
-                tabContents.forEach((tab) => {
-                    if (tab.dataset.content !== activeTab.dataset.tab) {
-                        tab.style.display = "none";
-                    }
-                });
-            }
-    
-            controlTabs.forEach((tab) => {
-                tab.addEventListener("click", () => {
-                    const currentlyActiveTab = controlTabs.find((tab) =>
-                        tab.classList.contains("active")
-                    );
-                    if (tab == currentlyActiveTab) {
-                        return;
-                    }
-                    currentlyActiveTab.classList.remove("active");
-                    tab.classList.add("active");
-                    showTab();
-                });
-            });
-    
-            showTab();
-        </script> -->
+    <script>
+
+    </script>
 </body>
 
 </html>
