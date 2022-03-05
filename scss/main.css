@@ -49,6 +49,9 @@ html {
             box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     z-index: 9999;
   }
+  header.header-fixed {
+    position: fixed;
+  }
   header nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -261,23 +264,11 @@ html {
     height: 100vh;
   }
   header nav .logo-wrapper img {
-    width: 100%;
+    width: auto;
     height: 100%;
   }
   header.is-active {
     z-index: 9999;
-  }
-  header.scroll-fixed {
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s;
-    background-color: #222;
-    position: fixed;
-  }
-  header.scroll-fixed nav {
-    height: 5em;
-    padding: 1em;
-    -ms-flex-wrap: inherit;
-        flex-wrap: inherit;
   }
 }
 
@@ -306,6 +297,9 @@ html {
     -webkit-box-shadow: none;
             box-shadow: none;
     z-index: 100;
+  }
+  header.header-fixed {
+    position: absolute;
   }
   header nav {
     display: -webkit-box;

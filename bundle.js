@@ -4414,7 +4414,7 @@
   }));
 
   // Navigation 1
-  const body = document.querySelector('body');
+  const header = document.querySelector('header');
   const burger = document.querySelector(".hamburger");
   const navOverlay = document.querySelector('.navlinks-overlay');
   const nav = document.querySelector(".nav-links");
@@ -4422,7 +4422,7 @@
   function toggleNav() {
       nav.classList.toggle('is-active');
       burger.classList.toggle('is-active');
-      body.classList.toggle('body-fixed');
+      header.classList.toggle('header-fixed');
       navOverlay.classList.toggle('is-active');
   }
   burger.addEventListener('click', toggleNav);

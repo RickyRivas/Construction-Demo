@@ -33,6 +33,10 @@
       z-index: 9999;
     }
 
+    &.header-fixed {
+      position: fixed;
+    }
+
     & nav {
       display: flex;
       justify-content: space-between;
@@ -235,7 +239,7 @@
       .logo-wrapper {
 
         img {
-          width: 100%;
+          width: auto;
           height: 100%;
         }
       }
@@ -246,21 +250,6 @@
       z-index: 9999;
     }
 
-    &.scroll-fixed {
-      transition: background-color 1s;
-      background-color: $light-black;
-      position: fixed;
-
-      nav {
-        height: 5em;
-        padding: 1em;
-        flex-wrap: inherit;
-
-        .logo-wrapper {
-          img {}
-        }
-      }
-    }
   }
 }
 
@@ -282,6 +271,10 @@
     & .is-active {
       box-shadow: none;
       z-index: 100;
+    }
+
+    &.header-fixed {
+      position: absolute;
     }
 
     & nav {
