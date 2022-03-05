@@ -427,6 +427,7 @@
                 position: relative;
                 z-index: 1;
                 transition: all 0.5s;
+                text-decoration: none;
 
                 img {
                     width: 3em;
@@ -444,6 +445,7 @@
                 p {
                     line-height: 1.5;
                     font-size: 0.9em;
+                    color: black;
                 }
 
                 .hover-img {
@@ -453,8 +455,8 @@
                     z-index: -1;
                     top: 0;
                     left: 0;
-                    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                        url(/assets/img11.webp) center / cover;
+                    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                        url(/assets/img05M.webp) center / cover;
                     transition: all 0.4s ease-in-out;
                     transform: scale(0.9);
                     opacity: 0;
@@ -1046,6 +1048,8 @@
     #landing {
         .swiper-container {
             .landing-content {
+                padding: 0 4em;
+
                 h1 {}
 
                 p {
@@ -1064,11 +1068,13 @@
             .swiper-wrapper {
                 .swiper-slide {}
             }
+
+
+            .swiper-slide-active {}
+
+            .controller {}
         }
 
-        .swiper-slide-active {}
-
-        .controller {}
     }
 
     .landing-overlap {
@@ -1084,29 +1090,20 @@
 
             a {
 
-                img {
-                }
+                img {}
             }
 
             &>div {
 
-                p {
+                p {}
 
-                }
+                p:nth-child(1) {}
 
-                p:nth-child(1) {
-
-                }
-
-                a.phone {
-
-                }
+                a.phone {}
             }
         }
 
-        &>div:nth-child(3) {
-
-        }
+        &>div:nth-child(3) {}
     }
 
     #intro {
@@ -1255,6 +1252,7 @@
             }
         }
     }
+
 }
 
 @media (min-width: 1024px) {
@@ -1263,6 +1261,7 @@
 
         .swiper-container {
             .landing-content {
+                padding: 0 5em;
                 h1 {}
 
                 p {
@@ -1308,6 +1307,36 @@
 
         .controller {
             right: 1.2em;
+        }
+
+        .swiper-next-custom {
+            position: absolute;
+            top: 50%;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            z-index: 10;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .swiper-prev-custom {
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
         }
     }
 
@@ -1789,11 +1818,11 @@
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }

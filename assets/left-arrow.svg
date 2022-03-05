@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g transform="matrix(-1,1.2246467991473532e-16,-1.2246467991473532e-16,-1,511.99998474121105,511.99999999999994)">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g transform="matrix(-1,1.2246467991473532e-16,-1.2246467991473532e-16,-1,511.99998474121105,511.99999999999994)">
 <g xmlns="http://www.w3.org/2000/svg">
 	<g>
-		<polygon points="166.124,0 89.876,76.257 269.619,256 89.876,435.743 166.124,512 422.124,256   " fill="#000000" data-original="#000000"/>
+		<polygon points="166.124,0 89.876,76.257 269.619,256 89.876,435.743 166.124,512 422.124,256   " fill="#fe5e15" data-original="#000000" class=""/>
 	</g>
 </g>
 <g xmlns="http://www.w3.org/2000/svg">

@@ -1421,6 +1421,7 @@ html {
     z-index: 1;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    text-decoration: none;
   }
   #services .container .item img {
     width: 3em;
@@ -1436,6 +1437,7 @@ html {
   #services .container .item p {
     line-height: 1.5;
     font-size: 0.9em;
+    color: black;
   }
   #services .container .item .hover-img {
     position: absolute;
@@ -1444,8 +1446,8 @@ html {
     z-index: -1;
     top: 0;
     left: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/assets/img11.webp) center/cover;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/img11.webp) center/cover;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/assets/img05M.webp) center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/img05M.webp) center/cover;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     -webkit-transform: scale(0.9);
@@ -2075,6 +2077,9 @@ html {
 }
 
 @media (min-width: 768px) {
+  #landing .swiper-container .landing-content {
+    padding: 0 4em;
+  }
   #landing .swiper-container .landing-content p {
     font-size: 1.5em;
   }
@@ -2127,6 +2132,9 @@ html {
   #landing {
     height: 768px;
   }
+  #landing .swiper-container .landing-content {
+    padding: 0 5em;
+  }
   #landing .swiper-container .landing-content p {
     font-size: 1.5em;
   }
@@ -2141,6 +2149,44 @@ html {
   }
   #landing .controller {
     right: 1.2em;
+  }
+  #landing .swiper-next-custom {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    z-index: 10;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #landing .swiper-prev-custom {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
   }
   .landing-overlap {
     -webkit-box-orient: horizontal;
@@ -2749,6 +2795,44 @@ input[type=number] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  #masonry-gallery .swiper-next-custom {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    z-index: 10;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #masonry-gallery .swiper-prev-custom {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    z-index: 9999;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
   }
   .modal-overlay .swiper-container .swiper-wrapper .swiper-slide img {
     max-width: 60%;
