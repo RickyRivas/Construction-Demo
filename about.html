@@ -21,7 +21,7 @@
 
 
     <link rel="stylesheet" href="/scss/main.css">
-    <link href="scss/swiper-bundle.min.css" rel='stylesheet'>
+    <!-- <link href="scss/swiper-bundle.min.css" rel='stylesheet'> -->
     <title>Construction Demo by RR | About Us | Tulsa, OK</title>
 </head>
 
@@ -194,9 +194,22 @@
         <p>&copy RWD 2022 | All Rights Reserved.</p>
     </div>
     <!-- Footer -->
-    <!-- Scripts -->
-    <script src='scripts/swiper-bundle.min.js'></script>
-    <script src='scripts/main.js'></script>
+        <!-- script -->
+        <script>
+            const body = document.querySelector('body');
+            const burger = document.querySelector(".hamburger");
+            const navOverlay = document.querySelector('.navlinks-overlay');
+            const nav = document.querySelector(".nav-links");
+    
+            function toggleNav() {
+                nav.classList.toggle('is-active');
+                burger.classList.toggle('is-active');
+                body.classList.toggle('body-fixed');
+                navOverlay.classList.toggle('is-active');
+            }
+            burger.addEventListener('click', toggleNav)
+            navOverlay.addEventListener('click', toggleNav)
+        </script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="/scss/main.css">
     <link href="scss/swiper-bundle.min.css" rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <title>Construction Demo by RR | Our Services | Tulsa, OK</title>
 </head>
 
@@ -105,14 +105,14 @@
                 </div>
                 <div class="item">
                     <img src="/assets/under-construction.svg" alt="house icon" width="60" height="60">
-                     <h4>Service Item</h4>
+                    <h4>Service Item</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tempus sed adipiscing nec
                         aliquam mauris. Adipiscing ultrices nibh amet morbi ultricies.</p>
                     <div class="hover-img"></div>
                 </div>
                 <div class="item">
                     <img src="/assets/under-construction.svg" alt="house icon" width="60" height="60">
-                     <h4>Service Item</h4>
+                    <h4>Service Item</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tempus sed adipiscing nec
                         aliquam mauris. Adipiscing ultrices nibh amet morbi ultricies.</p>
                     <div class="hover-img"></div>
@@ -191,13 +191,21 @@
         <p>&copy RWD 2022 | All Rights Reserved.</p>
     </div>
     <!-- Footer -->
-    <!-- Scripts -->
-    <script src='scripts/swiper-bundle.min.js'></script>
-    <script src='scripts/main.js'></script>
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- script -->
     <script>
-        AOS.init();
+        const body = document.querySelector('body');
+        const burger = document.querySelector(".hamburger");
+        const navOverlay = document.querySelector('.navlinks-overlay');
+        const nav = document.querySelector(".nav-links");
+
+        function toggleNav() {
+            nav.classList.toggle('is-active');
+            burger.classList.toggle('is-active');
+            body.classList.toggle('body-fixed');
+            navOverlay.classList.toggle('is-active');
+        }
+        burger.addEventListener('click', toggleNav)
+        navOverlay.addEventListener('click', toggleNav)
     </script>
 </body>
 

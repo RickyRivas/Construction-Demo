@@ -22,6 +22,9 @@
 
     <link rel="stylesheet" href="/scss/main.css">
     <link href="scss/swiper-bundle.min.css" rel='stylesheet'>
+
+    <!-- Script -->
+    <script src='bundle.js' defer></script>
     <title>Construction Demo by RR | Home | Tulsa, OK</title>
 </head>
 
@@ -545,50 +548,50 @@
         <p>&copy RWD 2022 | All Rights Reserved.</p>
     </div>
     <!-- Footer -->
-    <!-- Scripts -->
-    <script src='scripts/swiper-bundle.min.js'></script>
-    <script src='scripts/main.js'></script>
-    <script>
-        // tabs 
-        const controlTabs = Array.from(document.querySelectorAll(".tab-control"));
-        const tabContents = Array.from(document.querySelectorAll(".tab-content"));
-        const tabControlContainer = document.querySelector(".tab-controls");
-
-        function showTab() {
-            const activeTab = controlTabs.find((tab) =>
-                tab.classList.contains("active")
-            );
-            const activeTabContent = tabContents.find(
-                (tabContent) => tabContent.dataset.content === activeTab.dataset.tab
-            );
-            activeTabContent.style.display = "flex";
-            hideInactiveTabContents(activeTab);
-        }
-
-        function hideInactiveTabContents(activeTab) {
-            tabContents.forEach((tab) => {
-                if (tab.dataset.content !== activeTab.dataset.tab) {
-                    tab.style.display = "none";
-                }
-            });
-        }
-
-        controlTabs.forEach((tab) => {
-            tab.addEventListener("click", () => {
-                const currentlyActiveTab = controlTabs.find((tab) =>
+        <!-- Scripts -->
+        <!-- <script src='scripts/swiper-bundle.min.js'></script>
+        <script src='scripts/main.js'></script>
+        <script>
+            // tabs 
+            const controlTabs = Array.from(document.querySelectorAll(".tab-control"));
+            const tabContents = Array.from(document.querySelectorAll(".tab-content"));
+            const tabControlContainer = document.querySelector(".tab-controls");
+    
+            function showTab() {
+                const activeTab = controlTabs.find((tab) =>
                     tab.classList.contains("active")
                 );
-                if (tab == currentlyActiveTab) {
-                    return;
-                }
-                currentlyActiveTab.classList.remove("active");
-                tab.classList.add("active");
-                showTab();
+                const activeTabContent = tabContents.find(
+                    (tabContent) => tabContent.dataset.content === activeTab.dataset.tab
+                );
+                activeTabContent.style.display = "flex";
+                hideInactiveTabContents(activeTab);
+            }
+    
+            function hideInactiveTabContents(activeTab) {
+                tabContents.forEach((tab) => {
+                    if (tab.dataset.content !== activeTab.dataset.tab) {
+                        tab.style.display = "none";
+                    }
+                });
+            }
+    
+            controlTabs.forEach((tab) => {
+                tab.addEventListener("click", () => {
+                    const currentlyActiveTab = controlTabs.find((tab) =>
+                        tab.classList.contains("active")
+                    );
+                    if (tab == currentlyActiveTab) {
+                        return;
+                    }
+                    currentlyActiveTab.classList.remove("active");
+                    tab.classList.add("active");
+                    showTab();
+                });
             });
-        });
-
-        showTab();
-    </script>
+    
+            showTab();
+        </script> -->
 </body>
 
 </html>

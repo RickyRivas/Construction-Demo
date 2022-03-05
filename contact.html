@@ -218,14 +218,23 @@
         <p>&copy RWD 2022 | All Rights Reserved.</p>
     </div>
     <!-- Footer -->
-    <!-- Scripts -->
-    <script src='scripts/swiper-bundle.min.js'></script>
-    <script src='scripts/main.js'></script>
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- script -->
     <script>
-        AOS.init();
+        const body = document.querySelector('body');
+        const burger = document.querySelector(".hamburger");
+        const navOverlay = document.querySelector('.navlinks-overlay');
+        const nav = document.querySelector(".nav-links");
+
+        function toggleNav() {
+            nav.classList.toggle('is-active');
+            burger.classList.toggle('is-active');
+            body.classList.toggle('body-fixed');
+            navOverlay.classList.toggle('is-active');
+        }
+        burger.addEventListener('click', toggleNav)
+        navOverlay.addEventListener('click', toggleNav)
     </script>
+
 </body>
 
 </html>

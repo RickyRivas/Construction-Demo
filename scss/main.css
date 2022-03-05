@@ -2363,6 +2363,18 @@ html {
   }
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 @media (min-width: 0em) {
   #about {
     padding: 4em 1em;
@@ -2637,7 +2649,7 @@ html {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
-    z-index: 1001;
+    z-index: 9999;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
